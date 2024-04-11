@@ -8,10 +8,13 @@
     }
   
     .about-me-section__description {
-        height: 500 px;
+        min-height: 500 px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 32px;
- margin-left: auto;
-        margin-right: auto; 
+        display: flex;
         background-color: #242527;
      
     }
@@ -23,7 +26,8 @@
   }
 
   .about-me-section__photo {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -38,5 +42,10 @@
     .about-me-section__description--title {
         font-size: 24px;
         font-weight: 500;
+        line-height: 28px;
          }
      
+         .about-me-section__header{
+            color: #FAFAFA66;
+            font-size: 16px;
+         }
