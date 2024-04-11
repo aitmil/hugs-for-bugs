@@ -1,22 +1,25 @@
-/* TEMP STYLES ( ВИДАЛИТИ ПОТІМ З ЦЬОГО ФАЙЛУ) */
-
 .faq-section {
-    margin: 0 16px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     max-width: 343px;
 }
 
 .faq-title {
-margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid;
+    border-color: #FAFAFA33;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #FAFAFA66;
+}
 
-font-size: 16px;
-font-weight: 600;
-line-height: 1.5;
-letter-spacing: -0.02em;
-color: #FAFAFA66;
-border-bottom: 1px solid;
-border-color: #FAFAFA33;
+.faq-column {
+    margin: 0 16px;
 }
 
 .faq-sector {
@@ -24,11 +27,8 @@ border-color: #FAFAFA33;
     border-bottom: 1px solid;
     border-color: #FAFAFA33;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 16px;
-}
-
-.faq-top-section {
     position: relative;
 }
 
@@ -39,21 +39,20 @@ border-color: #FAFAFA33;
     line-height: 1.5;
     letter-spacing: -0.02em;
     color: #FAFAFA;
-    
 }
 
 .faq-accordion {
-position: absolute;
-top:0;
-right: 0;
-width: 34px;
-height: 34px;
-padding: 7px;
-border: 1px solid;
-border-color: #FAFAFA33;
-border-radius: 50%;
-background-color: transparent;
-color: #FAFAFA;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+    border: 1px solid;
+    border-color: #FAFAFA33;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #FAFAFA;
 }
 
 .faq-arrow {
@@ -66,7 +65,12 @@ color: #FAFAFA;
     opacity: 100%;
 }
 
+.faq-arrow.rotate {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
 .faq-sector-description {
+    display: block;
     opacity: 60%;
     font-weight: 500;
     font-size: 16px;
@@ -74,15 +78,29 @@ color: #FAFAFA;
     letter-spacing: -0.02em;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+.hide {
+    display: none;
+}
 
+@media (min-width: 768px) {
     .faq-section {
         max-width: 704px;
     }
 
+    .faq-title {
+        margin: 0;
+    }
+
+    .faq-column {
+        margin: 0;
+    }
+
     .faq-sector {
-        padding: 32px 0 24px 0;
         gap: 26px;
+        padding: 32px 0 24px 0;
+        border-bottom: 1px solid;
+        border-top: 0;
+        border-color: #FAFAFA33;
     }
 
     .faq-sector-title {
@@ -91,29 +109,49 @@ color: #FAFAFA;
 
     .faq-sector-description {
         max-width: 656px;
+        padding-right: 32px;
     }
 }
 
 @media (min-width: 1440px) {
 
     .faq-section {
-        margin: 0 32px;
+        max-width: 1376px;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .faq-column {
-        max-width: 656px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .faq-sector {
-        padding: 20px 0;
-        border-bottom: 1px solid;
-        border-color: #FAFAFA33;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        width: 50%;
     }
+
+    .faq-sector:nth-child(odd) {
+        padding-right: 32px;
+        border-right: 1px solid;
+        border-color: #FAFAFA33;
+        
+    }
+
+    .faq-sector:nth-child(even) {
+        padding-left: 32px;
+    }
+
+    .faq-sector:nth-child(n+4) {
+        margin-top: 0;
+    }
+
+    .faq-accordion {
+        top: 32px;
+        right: 32px;
+    }
+
+    
 }
+
+
