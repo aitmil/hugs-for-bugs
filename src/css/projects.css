@@ -1,0 +1,43 @@
+/* Basic style */
+/* .... */
+
+/* Rubber flexible design */
+@media only screen and (min-width: 320px) and (max-width: 374.98px){
+    .project-section{}
+}
+
+/* Mobile phone adaptive design*/
+@media only screen and(min-width: 375px) and (max-width: 767.98px){
+    .project-section {}
+}
+
+/* Tablet adaptive design*/
+@media only screen and(min-width: 768px) and (min-width: 1439.98px){
+    .project-section {}
+}
+
+/* Desktop adaptive design */
+@media only screen and(min-width: 1440px) {
+    .project-section {}
+}
+
+
+/* Rubber flexible design  for retina display*/
+@media only screen and (min-width: 320px) and (max-width: 374.98px) and ((min-device-pixel-ratio: 2) or (min-resolution:  192dpi) or (min-resolution: 2ppx)) {
+    .project-section {}
+}
+
+/* Mobile phone adaptive design  for retina display*/
+@media only screen and(min-width: 375px) and (max-width: 767.98px) and (max-width: 374.98px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2ppx)) {
+    .project-section {}
+}
+
+/* Tablet adaptive design for retina display*/
+@media only screen and(min-width: 768px) and (min-width: 1439.98px) and (max-width: 374.98px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2ppx)) {
+    .project-section {}
+}
+
+/* Desktop adaptive design for retina display*/
+@media only screen and(min-width: 1440px) and (max-width: 374.98px) and ((min-device-pixel-ratio: 2) or (min-resolution: 192dpi) or (min-resolution: 2ppx)) {
+    .project-section {}
+}
