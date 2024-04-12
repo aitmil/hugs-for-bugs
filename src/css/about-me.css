@@ -82,6 +82,9 @@
             display: flex;
          }
 
+         .about-me-section__panel-text {
+            font-size: 16px;
+         }
         .about-me-section__item {
             padding: 20px 0;
             border-bottom: 1px solid;
