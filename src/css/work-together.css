@@ -38,6 +38,12 @@ img {
     margin-bottom: 16px;
     min-width: 343px;
     padding-bottom: 20px;
+<<<<<<< Updated upstream
+=======
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+>>>>>>> Stashed changes
     color: var(--primary-light-color);
     background-color: var(--primary-dark-color);
     border: none;
@@ -49,10 +55,19 @@ img {
     border-bottom: 1px solid var(--primary-light-color);
 }
 .work-together-form-comment {
-    margin-bottom: 32px;
     min-width: 343px;
+<<<<<<< Updated upstream
     min-height: 44px;
     color: var(--primary-light-color);
+=======
+    height: 44px;
+    resize: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--primary-light-color);
+    margin-bottom: 32px;
+>>>>>>> Stashed changes
     background-color: var(--primary-dark-color);
     border: none;
     border-bottom: 1px inset rgba(250, 250, 250, 0.2);
