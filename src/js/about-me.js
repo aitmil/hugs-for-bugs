@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 function initAboutMeAccordion() {
-    new Accordion('.about-me-section__accordion-container', {
+    new Accordion('.about-me__accordion-container', {
         duration: 400,
         showMultiple: false,
         collapse: true,
@@ -13,11 +13,11 @@ function initAboutMeAccordion() {
 
 initAboutMeAccordion(); 
 
-const accordionHeaders = document.querySelectorAll('.about-me-section__header');
+const accordionHeaders = document.querySelectorAll('.about-me__header');
 accordionHeaders.forEach(header => {
     header.addEventListener('click', function() {
-        const accordionItem = this.closest('.about-me-section__item');
-        const panel = accordionItem.querySelector('.about-me-section__panel');
+        const accordionItem = this.closest('.about-me__item');
+        const panel = accordionItem.querySelector('.about-me__panel');
 
         if (panel) {
             panel.classList.toggle('visually-hidden');

@@ -1,39 +1,31 @@
 @media screen and (max-width: 767px) {
-    .about-me-section__box {
+    .about-me__section-box {
         margin-bottom: 64 px;
+        padding: 0 20px;
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
-        align-items: center;
-
+        gap: 32px;
     }
   
-    .about-me-section__image {
+    .about-me__image {
         margin-left: 16px;
         margin-right: 16px;
     }
 
-    .about-me-section__photo {
+    .about-me__photo {
         max-width: 100%;
   height: auto;
     }
   }
 
-  .about-me-section__section-box {
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    position: absolute;
-    gap: 32px;
-  }
-
-  .about-me-section__box {
+  .about-me__box {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
 
-  .about-me-section__description {
+  .about-me__description {
     display: block;
     height: 500px;
    width: 343px;
@@ -42,17 +34,17 @@
     border-radius: 24px;
   }
 
-  .about-me-section__description--title-accent-red {
+  .about-me__description--title-accent-red {
     color: var(--accent-color);
     text-transform: uppercase;
   }
 
-  .about-me-section__description--title-accent-grey {
+  .about-me__description--title-accent-grey {
     color: #FAFAFA66;
     text-transform: uppercase;
   }
 
-  .about-me-section__photo {
+  .about-me__photo {
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -60,32 +52,32 @@
   }
 
   @media screen and (min-width: 768px) {
-    .about-me-section__box {
+    .about-me__box {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }}
 
-    .about-me-section__description--title {
+    .about-me__description--title {
         font-size: 24px;
         font-weight: 500;
         line-height: 28px;
         text-transform: uppercase;
          }
      
-         .about-me-section__header{
+         .about-me__header{
             color: #FAFAFA66;
             font-size: 16px;
          }
 
-         .about-me-section__wrapper {
+         .about-me__wrapper {
             display: flex;
          }
 
-         .about-me-section__panel-text {
+         .about-me__panel-text {
             font-size: 16px;
          }
-        .about-me-section__item {
+        .about-me__item {
             padding: 20px 0;
             border-bottom: 1px solid;
             border-color: #FAFAFA33;
@@ -95,7 +87,7 @@
             position: relative;
         }
 
-        .about-me-section__item--box {
+        .about-me__item--box {
             display: flex;
             justify-content: space-between;
         }
