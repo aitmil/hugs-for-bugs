@@ -137,10 +137,17 @@
     .faq-sector:nth-child(3) { order: 5; border-right: 1px solid #FAFAFA33; padding-right: 32px;}
     .faq-sector:nth-child(6) { order: 6; padding-left: 32px;}
 
-    .faq-accordion {
-        top: 32px;
+    .faq-sector:nth-child(1) .faq-accordion {
         right: 32px;
-    }  
+    }
+
+    .faq-sector:nth-child(2) .faq-accordion {
+        right: 32px;
+    }
+
+    .faq-sector:nth-child(3) .faq-accordion {
+        right: 32px;
+    }
 }
 
 
