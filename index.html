@@ -25,7 +25,7 @@
     <script type="module" crossorigin src="/hugs-for-bugs/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/hugs-for-bugs/assets/vendor-8f98089f.js">
     <link rel="stylesheet" href="/hugs-for-bugs/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-07d0ddc2.css">
+    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-7b9a2d4b.css">
   </head>
   <body>
     <!-- ======== Header ========= -->
@@ -229,13 +229,16 @@
     <!-- ======= Footer ====== -->
     <section class="work-together-section" id="work-together">
     <div class="work-together-container">
-        <picture class="work-together-picture">
-            <img srcset="../img/developer-image-2x.jpeg" 
-                src="../img/developer-image.jpeg" 
-                alt="photo of the developer in glasses" 
-                width="44">
-        </picture>
-        <h2 class="work-together-title">let's <span class="work-together-span">work</span> together</h2>
+        <div class="work-together-logo-title">
+            <picture class="work-together-picture">
+            <img srcset="./img/developer-image-2x.jpeg" src="./img/developer-image.jpeg"
+                alt="photo of the developer in glasses" width="44">
+            </picture>
+            <h2 class="work-together-title">let's 
+                <span class="work-together-span">work</span>
+                <br><span class="work-together-second-span">together</span></h2>
+        </div>
+        
         <form class="work-together-form">
             <input class="work-together-form-input" 
                 id="client-email" 
@@ -265,18 +268,21 @@
 </section>
 
     <!-- ======= Modal ======= -->
-    <section class="modal-section" id="modal">
-    <div class="modal-container">
-        <button class="modal-close-button" type="button">
-            <svg class="modal-close-button-icon" width="22" height="22" aria-label="icon-icon-cross">
-                <use href="../img/svg/symbol-defs.svg"></use>
-            </svg>
-        </button>
-        <h4 class="modal-title">Thank you for your interest in cooperation!</h4>
-        <p class="modal-decription">The manager will contact you shortly to discuss further details and opportunities for
-            cooperation. Please stay in touch.</p>
-    </div>
-</section>
+    <div class="backdrop">
+    <section class="modal-section is-open" id="modal">
+        <div class="modal-container">
+            <button class="modal-close-button" type="button">
+                <svg class="modal-close-button-icon" width="22" height="22" aria-label="icon-icon-cross">
+                    <use href="../img/svg/symbol-defs.svg#icon-icon-cross"></use>
+                </svg>
+            </button>
+            <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+            <p class="modal-decription">The manager will contact you shortly to discuss further details and opportunities
+                for
+                cooperation. Please stay in touch.</p>
+        </div>
+    </section>
+</div>
 
 
     <!-- ========= JS ======== -->
