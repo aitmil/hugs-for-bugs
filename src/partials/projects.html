@@ -1,7 +1,6 @@
 <section id="projects" class="project-section section">
   <h2 class="project-section-header">PROJECTS</h2>
 
-  <!-- Mobile screen markup starts here:-->
   <!-- Upper "light" part -->
   <div class="project-section-light-part">
     <!-- <div class = "project-section-skills"> -->
@@ -17,7 +16,7 @@
       Programming Across Borders: Ideas, Technologies, Innovations
     </h3>
 
-    <a
+    <!-- <a
       href="#"
       class="link project-section-link"
       aria-label="See project"
@@ -25,7 +24,9 @@
       rel="noopener noreferer"
     >
       See project
-    </a>
+    </a> -->
+
+    <button class="see-project-btn" type="button">See project</button>
   </div>
 
   <!-- Lower "dark" part -->
@@ -40,7 +41,7 @@
 
           <source srcset="../img/project-section/img_mob_1.jpg 1x, ../img/project-section/img_mob_1@2x.jpg 2x" media="(min-width: 375px)" />
 
-          <img class="project-section-img" src="../img/project-section/img_desc_1.jpg" alt="Project example" />
+          <img class="project-section-img" src="../img/project-section/img_mob_1.jpg" alt="Project example" />
         </picture>
       </div>
 
@@ -56,7 +57,7 @@
             <source srcset="../img/project-section/img_mob_2.jpg 1x, ../img/project-section/img_mob_2@2x.jpg 2x"
                 media="(min-width: 375px)" />
         
-            <img class="project-section-img" src="../img/project-section/img_desc_2.jpg" alt="Project example" />
+            <img class="project-section-img" src="../img/project-section/img_mob_2.jpg" alt="Project example" />
       </div>
 
     <!-- Third slide -->
@@ -71,22 +72,23 @@
             <source srcset="../img/project-section/img_mob_3.jpg 1x, ../img/project-section/img_mob_3@2x.jpg 2x"
                 media="(min-width: 375px)" />
         
-            <img class="project-section-img" src="../img/project-section/img_desc_3.jpg" alt="Project example" />
+            <img class="project-section-img" src="../img/project-section/img_mob_3.jpg" alt="Project example" />
       </div>
     </div>
   </div>
 
   <div class="project-section-buttons">
-    <div class="button swiper-button-prev">ArrowLeft
-        <svg class="project-section-arrow-left-svg">
-            <use></use>
+    <div class="swip-btn swiper-button-prev">
+        <svg width="25" height="24" class="project-section-arrow-left-svg">
+                <!-- Need to change the arrow svg -->
+            <use href="../img/svg/symbol-defs.svg#icon-arrow-narrow-right"></use>
         </svg>
     </div>
-    <div class="button swiper-button-next">ArrowRight
-            <svg class="project-section-arrow-right-svg">
-                <use></use>
+    <div class="swip-btn swiper-button-next">
+            <svg width="25" height="24" class="project-section-arrow-right-svg">
+                <!-- Need to change the arrow svg -->
+            <use href="../img/svg/symbol-defs.svg#icon-arrow-narrow-right"></use>
             </svg>
     </div>
   </div>
-  <!-- Mobile screen markup ends here-->
 </section>
