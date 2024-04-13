@@ -16,21 +16,12 @@
       Programming Across Borders: Ideas, Technologies, Innovations
     </h3>
 
-    <!-- <a
-      href="#"
-      class="link project-section-link"
-      aria-label="See project"
-      target="_blank"
-      rel="noopener noreferer"
-    >
-      See project
-    </a> -->
-
     <button class="see-project-btn" type="button">See project</button>
   </div>
 
   <!-- Lower "dark" part -->
-  <div class="project-section-dark-part swiper">
+  <div class="project-section-dark-part ">
+    <div class="swiper">
     <div class="swiper-wrapper">
         <!-- First slide -->
       <div class="swiper-slide">
@@ -75,20 +66,22 @@
             <img class="project-section-img" src="../img/project-section/img_mob_3.jpg" alt="Project example" />
       </div>
     </div>
-  </div>
-
-  <div class="project-section-buttons">
-    <div class="swip-btn swiper-button-prev">
+<div class="project-section-buttons">
+    <div class="swipe-btn swiper-button-prev">
         <svg width="25" height="24" class="project-section-arrow-left-svg">
-                <!-- Need to change the arrow svg -->
+            <!-- Need to revise the arrow svg -->
+            <use href="../img/svg/symbol-defs.svg#icon-arrow-narrow-left"></use>
+        </svg>
+    </div>
+    <div class="swipe-btn swiper-button-next">
+        <svg width="25" height="24" class="project-section-arrow-right-svg">
+            <!-- Need to revise the arrow svg -->
             <use href="../img/svg/symbol-defs.svg#icon-arrow-narrow-right"></use>
         </svg>
     </div>
-    <div class="swip-btn swiper-button-next">
-            <svg width="25" height="24" class="project-section-arrow-right-svg">
-                <!-- Need to change the arrow svg -->
-            <use href="../img/svg/symbol-defs.svg#icon-arrow-narrow-right"></use>
-            </svg>
-    </div>
+</div>
+  </div>
+
+
   </div>
 </section>
