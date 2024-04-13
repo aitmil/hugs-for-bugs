@@ -1,7 +1,7 @@
-/* .reviews-section {
+.reviews-section {
     margin: 0 auto;
     max-width: 344px;
-} */
+}
 
 .reviews-carusel {
     display: flex;
@@ -41,7 +41,10 @@
     margin-bottom: 8px;
 }
 
-.review-user-comment {}
+.review-user-comment {
+    margin: 0;
+    text-overflow: ellipsis;
+}
 
 
 
@@ -59,4 +62,21 @@
     .reviews-section {
         max-width: 1376px;
     }
+}
+
+
+
+.toggle-btn {
+    display: transparent;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color:inherit;
+    cursor: pointer;
+} 
+.review-user-comment-collapsed {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
