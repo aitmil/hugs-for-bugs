@@ -6,21 +6,10 @@
 
 .rolling-images {
     position: relative;
-    bottom: 10%;
-        right: 0;
+    
 }
 
-.rolling-images ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    bottom: 10%;
-    right: 0;
-    transform: translate(0%, 100%);
-    animation: rollImages 30s linear infinite;
-    z-index: 1;
-}
+
 @keyframes rollImages {
     0% {
         transform: translateY(0) translateX(0);
@@ -42,17 +31,23 @@
         transform: translateY(0%) translateX(0%);
     }
 }
+
+.rolling-images ul li img {
+    border-radius: 0;
+}
+
 .rolling-images ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     position: absolute;
     right: 0;
-    bottom: 0;
+    margin: 0;
+    padding: 0;
     transform: translateY(100%);
     animation: rollImages 30s linear infinite;
     z-index: 1;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .rolling-images ul li {
@@ -60,6 +55,7 @@
     position: relative;
     z-index: 2;
     transform: rotate(17deg);
+    margin:20px;
 }
 
 .covers-section::after {
