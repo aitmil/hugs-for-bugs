@@ -25,75 +25,96 @@
     <script type="module" crossorigin src="/hugs-for-bugs/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/hugs-for-bugs/assets/vendor-32dd1250.js">
     <link rel="stylesheet" href="/hugs-for-bugs/assets/vendor-2aba1e47.css">
-    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-7b4f8b3f.css">
+    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-6249c492.css">
   </head>
   <body>
     <!-- ======== Header ========= -->
     <header class="header section">
-    <div class="hero-animation"></div>
-    <div class="header-container container">
-        <nav class="header-navigation">
-            <a class="head-containe" href="https://aitmil.github.io/hugs-for-bugs/">
-                <img srcset="/hugs-for-bugs/assets/developer-image-2x-2415f1e0.png 2x" src="/hugs-for-bugs/assets/developer-image-1x-0478e8f0.png"
-                    alt="photo of the developer in glasses" width="44" />
+  <div class="hero-animation"></div>
+  <div class="header-container container">
+    <nav class="header-navigation">
+      <a class="header-wrapper" href="https://aitmil.github.io/hugs-for-bugs/">
+        <img
+          srcset="/hugs-for-bugs/assets/developer-image-2x-2415f1e0.png 2x"
+          src="/hugs-for-bugs/assets/developer-image-1x-0478e8f0.png"
+          alt="photo of the developer in glasses"
+          width="44"
+        />
 
-                <svg class="header-icon" width="84" height="19">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-jefferson"></use>
-                </svg>
-            </a>
-            <div class="menu-item">
-                <a class="dropdown">Menu</a>
-                <ul class="dropdown-content">
-                    <li class="dropdown-link">
-                        <a href="">About me</a>
-                    </li>
-                    <li class="dropdown-link">
-                        <a href="#benefits">Benefits</a>
-                    </li>
-                    <li class="dropdown-link">
-                        <a href="">Projects</a>
-                    </li>
-                    <li class="dropdown-link">
-                        <a href="#faq">FAQ</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <button class="mobile-menu-open-btn" type="button">
-            <svg class="mobile-menu-open-btn-icon" width="28" height="28" aria-label="mobile menu open icon">
-                <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-burger"></use>
-            </svg>
-        </button>
+        <svg class="header-icon" width="84" height="19" aria-label="icon-cross">
+          <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-jefferson"></use>
+        </svg>
+      </a>
+      <div class="menu-item">
+        <a href="#" class="dropdown">Menu</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-link">
+            <a href="#about-me">About me</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-        <a class="header-link" href="#work-together">Order the project</a>
+    <button class="mobile-menu-open-btn" type="button">
+      <svg
+        class="mobile-menu-open-btn-icon"
+        width="28"
+        height="28"
+        aria-label="mobile menu open icon"
+      >
+        <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <a class="header-link order-link" href="#work-together"
+      >Order the project</a
+    >
+  </div>
+
+  <div class="mobile-menu-wrapper is-open">
+    <div class="container mobile-menu-container">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg
+          class="modal-close-button-icon"
+          width="28"
+          height="28"
+          aria-label="close mobile icon"
+        >
+          <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link menu-studio" href="about-me"
+            >About me</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="benefits">Benefits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Projects</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="faq">FAQ</a>
+        </li>
+        <a class="header-link-mobile" href="#work-together"
+          >Order the project</a
+        >
+      </ul>
     </div>
-    <div class="mobile-menu-wrapper is-open">
-        <div class="container mobile-menu-container">
-
-            <button class="mobile-menu-close-btn" type="button">
-                <svg class="modal-close-button-icon" width="28" height="28" aria-label="close mobile icon">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-cross"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu">
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link menu-studio" href="about-me">About me</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link" href="benefits">Benefits</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link" href="">Projects</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link" href="faq">FAQ</a>
-                </li>
-                <a class="header-link-mobile" href="#work-together">Order the project</a>
-            </ul>
-        </div>
-
-    </div>
+  </div>
 </header>
+
     <!-- ======== Scroll ========= -->
     
     <main>
@@ -263,19 +284,24 @@
       </ul>
     </div>
 
-    <div class="swiper about-me__swiper-container">
-      <ul class="swiper-wrapper about-me__swiper-wrapper">
-        <li class="swiper-slide about-me__swiper-slide">HTML/CSS</li>
-        <li class="swiper-slide about-me__swiper-slide">JavaScript</li>
-        <li class="swiper-slide about-me__swiper-slide">React</li>
-        <li class="swiper-slide about-me__swiper-slide">Node.js</li>
-        <li class="swiper-slide about-me__swiper-slide">React Native</li>
-        <li class="swiper-slide about-me__swiper-slide">Soft skills</li>
+    <div class="swiper about-meswiper-container">
+      <ul class="swiper-wrapper about-meswiper-wrapper">
+        <li class="swiper-slide about-meswiper-slide">HTML/CSS</li>
+        <li class="swiper-slide about-meswiper-slide">JavaScript</li>
+        <li class="swiper-slide about-meswiper-slide">React</li>
+        <li class="swiper-slide about-meswiper-slide">Node.js</li>
+        <li class="swiper-slide about-meswiper-slide">React Native</li>
+        <li class="swiper-slide about-meswiper-slide">Soft skills</li>
       </ul>
       <button type="button" class="swiper-button-next">
-        <svg class="about-me-arrow" width="28" height="28" aria-label="icon arrow right">
+        <svg
+          class="about-me-arrow"
+          width="28"
+          height="28"
+          aria-label="icon arrow right"
+        >
           <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow-narrow-right"></use>
-      </svg>
+        </svg>
       </button>
     </div>
   </div>
