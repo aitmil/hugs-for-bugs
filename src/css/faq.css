@@ -2,7 +2,6 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    max-width: 343px;
 }
 
 .faq-title {
@@ -131,27 +130,24 @@
         width: 50%;
     }
 
-    .faq-sector:nth-child(odd) {
-        padding-right: 32px;
-        border-right: 1px solid;
-        border-color: #FAFAFA33;
-        
-    }
+    .faq-sector:nth-child(1) { order: 1; border-right: 1px solid #FAFAFA33; padding-right: 32px;}
+    .faq-sector:nth-child(4) { order: 2; padding-left: 32px;}
+    .faq-sector:nth-child(2) { order: 3; border-right: 1px solid #FAFAFA33; padding-right: 32px; }
+    .faq-sector:nth-child(5) { order: 4; padding-left: 32px;}
+    .faq-sector:nth-child(3) { order: 5; border-right: 1px solid #FAFAFA33; padding-right: 32px;}
+    .faq-sector:nth-child(6) { order: 6; padding-left: 32px;}
 
-    .faq-sector:nth-child(even) {
-        padding-left: 32px;
-    }
-
-    .faq-sector:nth-child(n+4) {
-        margin-top: 0;
-    }
-
-    .faq-accordion {
-        top: 32px;
+    .faq-sector:nth-child(1) .faq-accordion {
         right: 32px;
     }
 
-    
+    .faq-sector:nth-child(2) .faq-accordion {
+        right: 32px;
+    }
+
+    .faq-sector:nth-child(3) .faq-accordion {
+        right: 32px;
+    }
 }
 
 

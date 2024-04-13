@@ -1,0 +1,58 @@
+.hero {
+  position: relative;
+  padding-top: 281px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.hero-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #1c1d20, #69292d, #ed3b44, #69292d, #1c1d20);
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+.hero-title {
+  margin-bottom: 212px;
+  font-size: 50px;
+}
+
+.hero-list {
+  display: flex;
+  gap: 4px;
+}
+
+.hero-item {
+  border: 1px solid var(--border-color);
+  border-radius: 60px;
+  padding: 10px 12px;
+  width: 37px;
+  height: 37px;
+}
+
+.hero-social {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
