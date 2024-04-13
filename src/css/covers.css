@@ -2,6 +2,9 @@
     position: relative;
     overflow: hidden;
     height: 508px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .rolling-images {
@@ -39,7 +42,9 @@
 .rolling-images ul {
     list-style: none;
     position: absolute;
+    top: 0;
     right: 0;
+    
     margin: 0;
     padding: 0;
     transform: translateY(100%);
