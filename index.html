@@ -25,7 +25,7 @@
     <script type="module" crossorigin src="/hugs-for-bugs/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/hugs-for-bugs/assets/vendor-a054286a.js">
     <link rel="stylesheet" href="/hugs-for-bugs/assets/vendor-f53b51ae.css">
-    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-73c8c184.css">
+    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-dd5462c1.css">
   </head>
   <body>
     <!-- ======== Header ========= -->
@@ -104,12 +104,12 @@
 
       <!-- /* About me */ -->
       <section class="about-me" id="about-me">
-    <div class="about-me__section-box">
+    <div class="about-me__section">
     <h2 class="about-me__title visually-hidden">ABOUT ME</h2>
     <div class="about-me__box">
-    <div class="about-me__description">
+       <div class="about-me__description">
       <p class="about-me__description--title">I work with people all over the world to create impressive and  <span class="about-me__description--title-accent-red">functional</span> <span class="about-me__description--title-accent-grey">websites</span>  that reflect each client's unique personality.</p>
-    </div>
+       </div>
     <div class="about-me__image">
         <picture class="about-me__photo">
             <source
@@ -128,7 +128,7 @@
         </picture>
     </div>
 </div>
-
+<div class="about-me__accordion-box">
     <ul class="about-me__accordion-container">
       <li class="about-me__item">
         <div class="about-me__item--box">
@@ -137,7 +137,7 @@
           <svg class="about-me__icon" width="10" height="10" aria-label="icon arrow">
               <use href="./img/symbol-defs.svg#icon-arrow"></use>
           </svg>
-      </button>
+        </button>
     </div>
         <ul class="about-me__panel">
           <li class="about-me__panel-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming languages and technologies, always ready to improve my skills. I always follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.</li>
@@ -177,19 +177,23 @@
         </ul>
       </li>
     </ul>
+  </div>
 
-    <div class="about-me__swiper swiper-container">
-      <ul class="about-me__swiper-list swiper-wrapper">
-        <li class="about-me__swiper-item swiper-slide">HTML/CSS</li>
-        <li class="about-me__swiper-item swiper-slide">JavaScript</li>
-        <li class="about-me__swiper-item swiper-slide">React</li>
-        <li class="about-me__swiper-item swiper-slide">Node.js</li>
-        <li class="about-me__swiper-item swiper-slide">React Native</li>
+    <div class="about-me__swiper-container">
+      <div class="swiper">
+      <ul class="about-me__swiper-wrapper">
+          <li class="about-me__swiper-slide">HTML/CSS</li>
+          <li class="about-me__swiper-slide">JavaScript</li>
+          <li class="about-me__swiper-slide">React</li>
+          <li class="about-me__swiper-slide">Node.js</li>
+          <li class="about-me__swiper-slide">React Native</li>
+          <!-- Добавьте другие навыки, если необходимо -->
       </ul>
-     <div class="about-me__swiper-button swiper-button-next"></div>
-      <div class="about-me__swiper-button swiper-button-prev"></div>
     </div>
-    
+      <div class="about-me__swiper-button-next"></div>
+      <div class="about-me__swiper-button-prev"></div>
+  </div>
+  
 </div>
   </section>
       <!-- /* Benefits */ -->
@@ -316,11 +320,12 @@
       
     </main>
     <!-- ======= Footer ====== -->
-    <section class="work-together-section" id="work-together">
-    <div class="work-together-container">
+    <section class="work-together-section section" id="work-together">
+    <div class="work-together-container container">
         <div class="work-together-logo-title">
             <picture class="work-together-picture">
-            <img srcset="/hugs-for-bugs/assets/developer-image-2x-2415f1e0.png " src="/hugs-for-bugs/assets/developer-image-1x-0478e8f0.png"
+            <img srcset="/hugs-for-bugs/assets/developer-image-2x-2415f1e0.png 2x" 
+                src="/hugs-for-bugs/assets/developer-image-1x-0478e8f0.png"
                 alt="photo of the developer in glasses" width="44">
             </picture>
             <h2 class="work-together-title">let's 
@@ -329,18 +334,19 @@
         </div>
         
         <form class="work-together-form">
-            <input class="work-together-form-input" 
-                id="client-email" 
-                name="client-email" 
-                type="email"
-                pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" 
-                placeholder="clients@gmail.com" required>
-            <textarea class="work-together-form-comment" 
-                id="client-comment" 
-                name="client-comment" 
-                placeholder="comments"></textarea>
-            <button class="work-together-button" type="submit">Send</button>
+            <div class="work-together-form-input-section">
+                <input class="work-together-form-input" id="client-email" name="client-email" type="email"
+                    pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" required>
+                <textarea class="work-together-form-comment" id="client-comment" name="client-comment"
+                    placeholder="comments"></textarea>
+            </div>
+            
+                <div class="work-together-button-section">
+                    <button class="work-together-button" type="submit">Send</button>
+                </div>
+            
         </form>
+        
         <address class="work-together-contacts">
             <ul class="work-together-contacts-list">
                 <li class="work-together-contacts-list-link">
@@ -362,7 +368,7 @@
         <div class="modal-container">
             <button class="modal-close-button" type="button">
                 <svg class="modal-close-button-icon" width="22" height="22" aria-label="icon-cross">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-617b42d5.svg#icon-cross"></use>
+                    <use href="../img/svg/symbol-defs.svg#icon-cross"></use>
                 </svg>
             </button>
             <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
