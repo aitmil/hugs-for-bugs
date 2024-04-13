@@ -1,9 +1,6 @@
 @media screen and (max-width: 767px) {
-    .about-me__section-box {
-        margin-bottom: 64 px;
-        padding: 0 20px;
-        display: flex;
-        flex-wrap: nowrap;
+    .about-me__section {
+        padding: 64px 20px;
         flex-direction: column;
         gap: 32px;
     }
@@ -13,14 +10,14 @@
         margin-right: 16px;
     }
 
-    .about-me__photo {
-        max-width: 100%;
-  height: auto;
-    }
-  }
+       .about-me__swiper-slide
+        { margin-bottom: 64px;
+            width: 130px;
+            height: 130px;
+       
+        }
 
   .about-me__box {
-    display: flex;
     flex-direction: column;
     gap: 16px;
   }
@@ -34,15 +31,9 @@
     border-radius: 24px;
   }
 
-  .about-me__description--title-accent-red {
-    color: var(--accent-color);
-    text-transform: uppercase;
-  }
-
-  .about-me__description--title-accent-grey {
-    color: #FAFAFA66;
-    text-transform: uppercase;
-  }
+  .about-me__description--title {
+    font-size: 24px;
+     }
 
   .about-me__photo {
     display: flex;
@@ -50,33 +41,158 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
 
   @media screen and (min-width: 768px) {
+
+    .about-me__section {
+      max-width: 700px;
+      padding: 64px 20px;
+      flex-direction: column;
+      gap: 64px;
+  }
     .about-me__box {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }}
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
 
+    .about-me__description {
+      display: block;
+      height: 700px;
+     width: 700px;
+      padding: 64px;
+      background-color: #242527;
+      border-radius: 24px;
+    }
+  
     .about-me__description--title {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 28px;
-        text-transform: uppercase;
-         }
-     
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+       }
+
+       .about-me__photo {
+        display: flex;
+        width: max-content;
+        height: auto;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+  }
+
+  @media screen and (min-width: 1440px) {
+
+.about-me__section {
+  max-width: 1400px;
+  padding: 96px 20px;
+  flex-direction: column;
+  gap: 96px;
+}
+
+    .about-me__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 700px;
+      gap: 16px;
+  }
+  }
+
+  .about-me__section {
+    margin:0 auto;
+    display: flex;
+}
+
+  .about-me__photo {
+    display: flex;
+    width: max-content;
+    height: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .about-me__box {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .about-me__description {
+    display: block;
+    padding: 32px;
+    background-color: #242527;
+    border-radius: 24px;
+  }
+
+  .about-me__description--title {
+    font-weight: 500;
+    text-transform: uppercase;
+     }
+
+     .about-me__description--title-accent-red {
+      color: var(--accent-color);
+      text-transform: uppercase;
+    }
+
+    .about-me__description--title-accent-grey {
+      color: #FAFAFA66;
+      text-transform: uppercase;
+    }
+  
+    .about-me__panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
+
+  .about-me__swiper-slide
+  { margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 200px;
+      height: 200px;
+      background-color: var(--button-color);
+      border-radius: 50%;
+      color: var(--primary-light-color);
+  }
+
+
+
+  .about-me__section {
+    margin:0 auto;
+    padding: 64px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 32px;
+}
+
          .about-me__header{
             color: #FAFAFA66;
             font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
          }
 
-         .about-me__wrapper {
-            display: flex;
-         }
 
          .about-me__panel-text {
             font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+
          }
+
+
         .about-me__item {
             padding: 20px 0;
             border-bottom: 1px solid;
@@ -91,3 +207,15 @@
             display: flex;
             justify-content: space-between;
         }
+
+
+      .about-me__swiper-wrapper {
+        display: flex;
+        flex-direction: row;
+
+      }
+
+
+
+  
+
