@@ -1,9 +1,12 @@
+@media screen and (min-width:320px) {
+
 .backdrop {
     position: fixed;
     top: 138px;
     bottom: 138px;
     left: 16px;
     right: 16px;
+    
     z-index: 99999;
     max-width: 343px;
     max-height: 276px;
@@ -19,7 +22,7 @@
 .modal-container {
     position: relative;
     padding: 64px 32px;
-    
+    transition: translate(50%, -50%);
 }
 .modal-close-button {
     position: absolute;
@@ -46,4 +49,21 @@
     max-height: 276px;
     text-align: center;
     color: rgba(250, 250, 250, 0.6);
+}
+<<<<<<< Updated upstream
+}
+@media screen and (min-width: 768px) {
+    .backdrop {
+        max-width: 492px;
+    }
+    .modal-container {
+        min-width: 364px;
+        min-height: 118px;
+        padding: 64px 64px;
+    }
+}
+@media screen and (min-width: 1280px) {
+
+=======
+>>>>>>> Stashed changes
 }

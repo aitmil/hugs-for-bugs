@@ -1,25 +1,16 @@
 img {
     border-radius: 12px;
 }
-.work-together-section {
-   padding: 32px 0;
-}
-.work-together-container{
-    max-width: 375px;
-    margin: 0px 16px;
-}
 
 .work-together-logo-title {
     display: flex;
     margin-bottom: 111px;
+    gap: 8px;
 }
-
 .work-together-picture {
    width: 44px;
    height: 44px; 
-   padding-right: 8px;
    background-color: var(--primary-dark-color);
-   
 }
 .work-together-title {
     position: relative;
@@ -28,38 +19,63 @@ img {
     line-height: 40px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-
 }
 .work-together-span {
     color: var(--button-color);
 }
 .work-together-second-span {
     position: absolute;
-    left: -45px;
+    left: -53px;
 }
+
 
 .work-together-form {
     display: flex;
     flex-wrap: wrap;
 }
+
 .work-together-form-input {
     margin-bottom: 16px;
     min-width: 343px;
     padding-bottom: 20px;
+<<<<<<< Updated upstream
+=======
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+>>>>>>> Stashed changes
+    color: var(--primary-light-color);
     background-color: var(--primary-dark-color);
     border: none;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    border-bottom: 1px inset rgba(250, 250, 250, 0.2);
+    
 }
-
+.work-together-form-input:hover,
+.work-together-form-input:focus {
+    border-bottom: 1px solid var(--primary-light-color);
+}
 .work-together-form-comment {
-    margin-bottom: 32px;
     min-width: 343px;
+<<<<<<< Updated upstream
     min-height: 44px;
+    color: var(--primary-light-color);
+=======
+    height: 44px;
+    resize: none;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--primary-light-color);
+    margin-bottom: 32px;
+>>>>>>> Stashed changes
     background-color: var(--primary-dark-color);
     border: none;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    border-bottom: 1px inset rgba(250, 250, 250, 0.2);
 }
-
+.work-together-form-comment:hover,
+.work-together-form-comment:focus {
+    border-bottom: 1px solid var(--primary-light-color);
+}
 .work-together-button {
     margin-bottom: 64px;
     width: 100px;
@@ -69,10 +85,13 @@ img {
     color: var(--primary-light-color);
     border: none;
 }
+
 .work-together-button:focus,
 .work-together-button:hover {
     background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
+
 .work-together-contacts {
     display: flex;
     flex-direction: column;
@@ -91,7 +110,94 @@ img {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.02em;
-    border: 1px solid rgba(250, 250, 250, 0.2);
+    border: 1px inset rgba(250, 250, 250, 0.2);
     border-radius: 17px;
     padding: 10px 12px;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    border: 1px solid var(--primary-light-color);
+}
+ 
+
+
+@media screen and (min-width: 768px) {
+    img {
+        width: 70px;
+    }
+    
+    .work-together-container {
+        padding-top: 80px;
+        padding-bottom: 169px;
+        margin: 0;
+        max-width: 768px;
+    }
+
+    .work-together-logo-title {
+        gap: 20px;
+    }    
+    .work-together-picture {
+        width: 70px;
+        height: 70px;
+    }
+    .work-together-title {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .work-together-second-span {
+        left: -91px;
+    }
+
+    .work-together-form {
+        flex-wrap: nowrap;
+        align-items: baseline;
+        gap: 32px;
+    }
+    .work-together-form-input {
+        min-width: 245px;
+        height: 44px;
+    }    
+    .work-together-form-comment {
+        min-width: 245px;
+        height: 44px;
+    }
+    .work-together-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .work-together-contacts-list {
+        min-width: 418px;
+        height: 55px;
+        gap: 8px;
+    }
+    .contacts-link {
+        font-size: 16px;
+        padding: 18px 32px;
+        border-radius: 60px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+    .work-together-container {
+        margin: 0;
+        max-width: 1440px;
+        padding-left: 196px;
+        padding-right: 196px;
+    }
+    
+    .work-together-form {
+        justify-content: space-between;
+    }
+    .work-together-form-input-section {
+        display: flex;
+        gap: 32px;
+    }
+    .work-together-form-input {
+        width: 390px;
+    }
+    .work-together-form-comment {
+        width: 390px;
+    }
 }
