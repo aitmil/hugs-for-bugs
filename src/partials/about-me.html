@@ -1,10 +1,10 @@
 <section class="about-me" id="about-me">
-    <div class="about-me__section-box">
+    <div class="about-me__section">
     <h2 class="about-me__title visually-hidden">ABOUT ME</h2>
     <div class="about-me__box">
-    <div class="about-me__description">
+       <div class="about-me__description">
       <p class="about-me__description--title">I work with people all over the world to create impressive and  <span class="about-me__description--title-accent-red">functional</span> <span class="about-me__description--title-accent-grey">websites</span>  that reflect each client's unique personality.</p>
-    </div>
+       </div>
     <div class="about-me__image">
         <picture class="about-me__photo">
             <source
@@ -23,7 +23,7 @@
         </picture>
     </div>
 </div>
-
+<div class="about-me__accordion-box">
     <ul class="about-me__accordion-container">
       <li class="about-me__item">
         <div class="about-me__item--box">
@@ -32,7 +32,7 @@
           <svg class="about-me__icon" width="10" height="10" aria-label="icon arrow">
               <use href="./img/symbol-defs.svg#icon-arrow"></use>
           </svg>
-      </button>
+        </button>
     </div>
         <ul class="about-me__panel">
           <li class="about-me__panel-text">I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of different programming languages and technologies, always ready to improve my skills. I always follow the latest trends and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to effectively solve even the most difficult tasks encountered on the way.</li>
@@ -72,18 +72,22 @@
         </ul>
       </li>
     </ul>
+  </div>
 
-    <div class="about-me__swiper swiper-container">
-      <ul class="about-me__swiper-list swiper-wrapper">
-        <li class="about-me__swiper-item swiper-slide">HTML/CSS</li>
-        <li class="about-me__swiper-item swiper-slide">JavaScript</li>
-        <li class="about-me__swiper-item swiper-slide">React</li>
-        <li class="about-me__swiper-item swiper-slide">Node.js</li>
-        <li class="about-me__swiper-item swiper-slide">React Native</li>
+    <div class="about-me__swiper-container">
+      <div class="swiper">
+      <ul class="about-me__swiper-wrapper">
+          <li class="about-me__swiper-slide">HTML/CSS</li>
+          <li class="about-me__swiper-slide">JavaScript</li>
+          <li class="about-me__swiper-slide">React</li>
+          <li class="about-me__swiper-slide">Node.js</li>
+          <li class="about-me__swiper-slide">React Native</li>
+          <!-- Добавьте другие навыки, если необходимо -->
       </ul>
-     <div class="about-me__swiper-button swiper-button-next"></div>
-      <div class="about-me__swiper-button swiper-button-prev"></div>
     </div>
-    
+      <div class="about-me__swiper-button-next"></div>
+      <div class="about-me__swiper-button-prev"></div>
+  </div>
+  
 </div>
   </section>

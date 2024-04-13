@@ -1,6 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 function initAboutMeAccordion() {
@@ -25,41 +26,17 @@ accordionHeaders.forEach(header => {
     });
 });
 
-const swiper = new Swiper('.swiper-container', {
-    direction: 'horizontal', 
-    loop: true, 
-    navigation: {
-      nextEl: '.swiper-button-next', 
-      prevEl: '.swiper-button-prev',
-    },
-    keyboard: {
-      enabled: true, 
-    },
-    slidesPerView: 'auto', 
-    spaceBetween: 20, 
-    breakpoints: {
-      600: {
-        slidesPerView: 2,
-        navigation: {
-          nextEl: null,
-          prevEl: null,
-        },
-      },
-     
-      992: {
-        slidesPerView: 3,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      },
-      
-      1200: {
-        slidesPerView: 2,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      },
-    },
-  });
+var aboutMeSwiper = new Swiper('.about-me__swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+  },
+  mousewheel: true,
+  touchEventsTarget: '.about-me__container',
+  navigation: {
+      nextEl: '.about-me__swiper-button-next',
+      prevEl: '.about-me__swiper-button-prev',
+  },
+});
