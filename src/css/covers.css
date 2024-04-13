@@ -1,0 +1,18 @@
+.covers-section {
+    
+    background:
+        radial-gradient(circle at 20% 20%, rgba(237, 59, 68, 0.8) 10%, transparent 11%),
+        radial-gradient(circle at 60% 70%, rgba(237, 59, 68, 0.8) 10%, transparent 11%),
+        radial-gradient(circle at 80% 30%, rgba(237, 59, 68, 0.8) 10%, transparent 11%),
+        radial-gradient(circle at 20% 90%, rgba(237, 59, 68, 0.8) 10%, transparent 11%);
+    filter: blur(50px);
+    z-index: -1;
+}
+
+
+@media screen and (min-width:320px) {
+    /* to edit versions*/
+    covers-section{
+        height: 508px;
+    }
+}

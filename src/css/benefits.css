@@ -1,6 +1,83 @@
-.benefit-icon {
+
+/* === MOBILE STYLES ==== */
+
+.benefits-list-item {
+    margin-top: 16px;    
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 29px;
+    background-color: rgba(255, 255, 255, 5%);
+}
+
+.benefits-list-item:first-child {
+    margin-top: 32px;    
+}
+
+.benefits-list-item:last-child {
+    margin-bottom: 24px;
+}
+
+.benefit-icon {    
     border-radius: 10px;
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     background-color: #ED3B44;   
 }
+
+.benefits-icon-container {
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #ED3B44;
+}
+
+.benefits-title-section {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FAFAFA;
+    opacity: 40%;
+}
+
+.benefit-title {
+    margin-top: 70px;
+    margin-bottom: 18px;
+}
+
+.benefits-text {
+    color: #FAFAFA;
+    opacity: 60%;
+}
+
+.benefits-button-container {
+    width: 187px;
+    height: 55px;        
+    border: 1px solid rgba(255, 255, 255, 20%);
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.benefits-link {
+    margin: 18px 36px;
+    width: 115px;
+    height: 19px;    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+/* === /MOBILE STYLES === */
+
+
+/* === TABLET STYLES === */
+
+
+/* === /TABLET STYLES === */
+
+
+/* === DESKTOP STYLES === */
+
+
+/* === /DESKTOP STYLES === */
+
