@@ -1,6 +1,4 @@
-img {
-  border-radius: 12px;
-}
+ 
 #client-email.invalid {
     border-bottom: 1px solid var(--error-text-color);
 }
@@ -17,6 +15,9 @@ img {
   width: 44px;
   height: 44px;
   background-color: var(--primary-dark-color);
+}
+.work-together-picture-image {
+  border-radius: 12px;
 }
 .work-together-title {
   position: relative;
