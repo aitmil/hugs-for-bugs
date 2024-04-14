@@ -48,14 +48,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-
-  background: linear-gradient(
-    90deg,
-    #1c1d20,
-    #69292d,
-    #e0373f #69292d,
-    #1c1d20
-  );
+  background: linear-gradient(90deg, #1c1d20, #69292d, #e0373f, #69292d, #1c1d20);
   background-size: 200% 100%;
   animation: gradientAnimation 10s ease-in-out infinite;
 }
@@ -72,9 +65,21 @@
   }
 }
 
-/* +++++++++ mobile-menu++++++++ */
+.mobile-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: linear-gradient(90deg, #1c1d20, #69292d, #e0373f, #69292d, #1c1d20);
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s ease-in-out infinite;
+  display: none;
+}
 
 .mobile-menu-container {
+  position: absolute;
   padding-top: 72px;
   padding-right: 24px;
   padding-bottom: 40px;
@@ -83,24 +88,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.mobile-menu-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-
-  transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu-wrapper.is-open {
-  transform: translateX(0%);
 }
 
 .mobile-menu-close-btn {
@@ -112,11 +99,10 @@
   background-color: transparent;
   top: 40px;
   right: 64px;
-  display: none;
 }
 
-.mobile-menu-wrapper.is-open .mobile-menu-close-btn {
-  display: flex;
+.mobile-menu-wrapper.is-open {
+  display: block;
 }
 
 .mobile-menu {
@@ -166,8 +152,8 @@
     text-decoration-skip-ink: none;
   }
 }
-/* 
-dropdown {
+
+.dropdown {
   float: left;
   overflow: hidden;
 }
@@ -185,10 +171,13 @@ dropdown {
 
 .dropdown-content {
   display: none;
-  position: absolute;
   background-color: #333;
   min-width: 160px;
   z-index: 1;
+}
+
+.dropdown-content .is-open {
+  display: block;
 }
 
 .dropdown-content a {
@@ -206,7 +195,7 @@ dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}  */
+} 
 
 @media screen and (min-width: 1440px) {
   .header-navigation {
@@ -216,3 +205,4 @@ dropdown {
     height: 80px;
   }
 }
+
