@@ -34,7 +34,7 @@ document.querySelectorAll('.about-me__button').forEach(button => {
   });
 });
 
-// SWIPERJS
+//=========================================================================
 
 const mySwiper = new Swiper('.swiper-skills-list', {
   modules: [Navigation],
@@ -50,6 +50,7 @@ const mySwiper = new Swiper('.swiper-skills-list', {
   breakpoints: {
     320: {
       slidesPerView: 2,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 3,
@@ -61,11 +62,4 @@ const mySwiper = new Swiper('.swiper-skills-list', {
   navigation: {
     nextEl: '.swiper-skill-list-next',
   },
-});
-
-mySwiper.on('slideChange', function onSlideChange() {
-  mySwiper.slides.forEach(slide => {
-    slide.classList.add('color-slide');
-    slide.classList.remove('color-slide');
-  });
 });

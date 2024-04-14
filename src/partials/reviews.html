@@ -1,13 +1,20 @@
 <section class="reviews-section section" id="reviews">
-    <h2 class="reviews-title title">Reviews</h2>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <ul class="reviews-carusel"></ul>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+  <h2 class="reviews-title title">Reviews</h2>
+  <div class="swiper-container swiper">
+    <div class="swiper-wrapper reviews-swiper">
+      <!-- <ul class="reviews-carusel"></ul> -->
     </div>
+    <div class="swiper-button-prev reviews-btn-next">
+      <svg width="25" height="24" class="project-section-arrow-right-svg">
+        <use href="./img/svg/symbol-defs.svg#icon-arrow-narrow-right"></use>
+      </svg>
+    </div>
+    <div class="swiper-button-next reviews-btn-prev">
+      <svg width="25" height="24" class="project-section-arrow-left-svg">
+        <use href="./img/svg/symbol-defs.svg#icon-arrow-narrow-left"></use>
+      </svg>
+    </div>
+  </div>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </section>

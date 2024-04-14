@@ -5,28 +5,27 @@
   position: relative;
   width: 343px;
 }
-.swiper .swiper-skills-list .swiper-wrapper {
+.swiper-skills-list .swiper-wrapper {
   width: 260px;
 }
 
-/* .swiper-slide .swiper-skills-slide .swiper-slide-active button {
-  background-color: var(--button-color);
-} */
+.swiper-skills-slide .swiper-slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.color-slide {
-  background-color: var(--button-color);
-}
+  width: 130px;
+  height: 130px;
 
-.swiper-skills-slide button {
   border: 1px solid var(--border-color);
   border-radius: 50%;
+
   color: inherit;
   background-color: inherit;
 }
 
-.swiper-skills-slide button:focus,
-.swiper-skills-slide button:active {
-  outline: none;
+.swiper-slide-active .swiper-slide-container {
+  background-color: var(--accent-color);
 }
 
 .swiper-skill-list-next {
@@ -37,7 +36,7 @@
 
   position: absolute;
   right: 0;
-  bottom: 40%;
+  bottom: 23%;
   z-index: 5;
 }
 .swiper-skill-list-next svg {
@@ -45,23 +44,16 @@
   fill: var(--border-color);
 }
 
-.swiper-skills-slide button {
-  border: 1px solid var(--border-color);
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-}
-
 @media screen and (min-width: 768px) {
   .swiper-skills-list {
     width: 704px;
   }
 
-  .swiper .swiper-skills-list .swiper-wrapper {
+  .swiper-skills-list .swiper-wrapper {
     width: 600px;
   }
 
-  .swiper-skills-slide button {
+  .swiper-skills-slide .swiper-slide-container {
     width: 150px;
     height: 150px;
   }
@@ -72,11 +64,11 @@
     width: 1312px;
   }
 
-  .swiper .swiper-skills-list .swiper-wrapper {
+  .swiper-skills-list .swiper-wrapper {
     width: 1200px;
   }
 
-  .swiper-skills-slide button {
+  .swiper-skills-slide .swiper-slide-container {
     width: 200px;
     height: 200px;
   }
