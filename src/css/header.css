@@ -48,14 +48,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-
-  background: linear-gradient(
-    90deg,
-    #1c1d20,
-    #69292d,
-    #e0373f #69292d,
-    #1c1d20
-  );
+  background: linear-gradient(90deg, #1c1d20, #69292d, #e0373f, #69292d, #1c1d20);
   background-size: 200% 100%;
   animation: gradientAnimation 10s ease-in-out infinite;
 }
@@ -72,35 +65,29 @@
   }
 }
 
-/* +++++++++ mobile-menu++++++++ */
-
-.mobile-menu-container {
-  padding-top: 72px;
-  padding-right: 24px;
-  padding-bottom: 40px;
-  padding-left: 16px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 .mobile-menu-wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 810px;
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-
-  transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(90deg, #1c1d20, #69292d, #e0373f, #69292d, #1c1d20);
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s ease-in-out infinite;
+  display: none;
 }
 
-.mobile-menu-wrapper.is-open {
-  transform: translateX(0%);
+.mobile-menu-container {
+  position: absolute;
+  /* padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  padding-left: 16px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 810px;
 }
 
 .mobile-menu-close-btn {
@@ -112,21 +99,22 @@
   background-color: transparent;
   top: 40px;
   right: 64px;
-  display: none;
 }
 
-.mobile-menu-wrapper.is-open .mobile-menu-close-btn {
-  display: flex;
+.mobile-menu-wrapper.is-open {
+  display: block;
 }
 
 .mobile-menu {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 40%;
 }
 
 .header-link-mobile {
   position: absolute;
+  top: 289px;
+  left: -80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,6 +133,10 @@
   .mobile-menu-open-btn {
     display: none;
   }
+
+.mobile-menu-wrapper{
+  display: none;
+}
 
   .menu-item {
     display: block;
@@ -166,6 +158,51 @@
     text-decoration-skip-ink: none;
   }
 }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content .is-open {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
+
 
 @media screen and (min-width: 1440px) {
   .header-navigation {
