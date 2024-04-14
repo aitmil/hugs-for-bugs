@@ -2,7 +2,7 @@
     <div class="work-together-container container">
         <div class="work-together-logo-title">
             <picture class="work-together-picture">
-            <img srcset="./img/developer-image-2x.png 2x" 
+            <img class="work-together-picture-image" srcset="./img/developer-image-2x.png 2x" 
                 src="./img/developer-image-1x.png"
                 alt="photo of the developer in glasses" width="44">
             </picture>
@@ -11,7 +11,7 @@
                 <br><span class="work-together-second-span">together</span></h2>
         </div>
         
-        <form class="work-together-form">
+        <form class="work-together-form" onsubmit="submitForm(event)">
             <div class="work-together-form-input-section">
                 <input class="work-together-form-input" id="client-email" name="client-email" type="email"
                     pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="clients@gmail.com" required>
@@ -22,7 +22,6 @@
                 <div class="work-together-button-section">
                     <button class="work-together-button" type="submit">Send</button>
                 </div>
-            
         </form>
         
         <address class="work-together-contacts">
