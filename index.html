@@ -25,11 +25,46 @@
     <script type="module" crossorigin src="/hugs-for-bugs/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/hugs-for-bugs/assets/vendor-7bb91979.js">
     <link rel="stylesheet" href="/hugs-for-bugs/assets/vendor-d5558669.css">
-    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-98ae6249.css">
+    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-801a8940.css">
   </head>
   <body>
     <!-- ======== Header ========= -->
     <header class="header section">
+  <div class="hero-animation"></div>
+  <div class="header-container container">
+    <nav class="header-navigation">
+      <a class="header-wrapper" href="https://aitmil.github.io/hugs-for-bugs/">
+        <img
+          class="work-together-picture-image"
+          srcset="/hugs-for-bugs/assets/developer-image-2x-2415f1e0.png 2x"
+          src="/hugs-for-bugs/assets/developer-image-1x-0478e8f0.png"
+          alt="photo of the developer in glasses"
+          width="44"
+        />
+        <span>jefferson*</span>
+      </a>
+
+      <!-- ----- DROPDOWN MENU ----- -->
+
+      <div class="menu-item">
+        <a href="#" class="dropdown">Menu</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-link">
+            <a href="#about-me">About me</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <!-- ------------------------- -->
+    </nav>
     <div class="hero-animation"></div>
     <div class="header-container container">
         <nav class="header-navigation">
@@ -60,41 +95,56 @@
             </div>
         </nav>
 
-        <button class="mobile-menu-open-btn" type="button">
-            <svg class="mobile-menu-open-btn-icon" width="28" height="28" aria-label="mobile menu open icon">
-                <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-burger"></use>
-            </svg>
-        </button>
+    <button class="mobile-menu-open-btn" type="button">
+      <svg
+        class="mobile-menu-open-btn-icon"
+        width="28"
+        height="28"
+        aria-label="mobile menu open icon"
+      >
+        <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-burger"></use>
+      </svg>
+    </button>
 
-        <a class="header-link order-link" href="#work-together">Order the project</a>
-    </div>
+    <a class="header-link order-link" href="#work-together"
+      >Order the project</a
+    >
+  </div>
 
-    <div class="mobile-menu-wrapper is-open">
-        <div class="container mobile-menu-container">
-            <button class="mobile-menu-close-btn" type="button">
-                <svg class="modal-close-button-icon" width="28" height="28" aria-label="close mobile icon">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-cross"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu">
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link menu-studio" href="#about-me">About me</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link" href="#benefits">Benefits</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link" href="#projects">Projects</a>
-                </li>
-                <li class="mobile-menu-item">
-                    <a class="mobile-menu-link link" href="#faq">FAQ</a>
-                </li>
-                <a class="header-link-mobile" href="#work-together">Order the project</a>
-            </ul>
-        </div>
+  <div class="mobile-menu-wrapper">
+    <div class="container mobile-menu-container">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg
+          class="modal-close-button-icon"
+          width="28"
+          height="28"
+          aria-label="close mobile icon"
+        >
+          <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link menu-studio" href="about-me"
+            >About me</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="benefits">Benefits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Projects</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="faq">FAQ</a>
+        </li>
+        <a class="header-link-mobile" href="#work-together"
+          >Order the project</a
+        >
+      </ul>
     </div>
+  </div>
 </header>
-
 
     <!-- ======== Scroll ========= -->
     
@@ -395,69 +445,102 @@
 </section>
 
       <!-- /* FAQ */ -->
-      <section id="faq" class="faq-section section">
-    <div>
-    <h2  class="faq-title">FAQ</h2>
+      <section id="faq" class="faq-section section container">
+  <div>
+    <h2 class="faq-title">FAQ</h2>
     <ul class="faq-column">
-        <li class="faq-sector">
-            <h3 class="faq-sector-title">What programming languages ​​are most often used in your project?</h3>
-            <button type="button" class="faq-accordion">
-                <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="faq-sector-description visually-hidden">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</div>
-        </li>
-        <li class="faq-sector">
-            <h3 class="faq-sector-title">What are the deadlines for the project?</h3>
-            <button type="button" class="faq-accordion">
-                <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="faq-sector-description visually-hidden">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</div>
-        </li>
-        <li class="faq-sector">
-            <h3 class="faq-sector-title">What payment methods do you accept?</h3>
-            <button type="button" class="faq-accordion">
-                <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="faq-sector-description visually-hidden">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</div>
-        </li>
-        <li class="faq-sector">
-            <h3 class="faq-sector-title">How can I contact you?</h3>
-            <button type="button" class="faq-accordion">
-                <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="faq-sector-description visually-hidden">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</div>
-        </li>
-        <li class="faq-sector">
-            <h3 class="faq-sector-title">What payment methods do you accept?</h3>
-            <button type="button" class="faq-accordion">
-                <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="faq-sector-description visually-hidden">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</div>
-        </li>
-        <li class="faq-sector">
-            <h3 class="faq-sector-title">What does the process of developing a software product look like from idea to implementation?</h3>
-            <button type="button" class="faq-accordion">
-                <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-                    <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
-                </svg>
-            </button>
-            <div class="faq-sector-description visually-hidden">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</div>
-        </li>
+      <li class="faq-sector">
+        <h3 class="faq-sector-title">
+          What programming languages ​​are most often used in your project?
+        </h3>
+        <button type="button" class="faq-accordion">
+          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
+            <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="faq-sector-description visually-hidden">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </div>
+      </li>
+      <li class="faq-sector">
+        <h3 class="faq-sector-title">
+          What are the deadlines for the project?
+        </h3>
+        <button type="button" class="faq-accordion">
+          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
+            <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="faq-sector-description visually-hidden">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </div>
+      </li>
+      <li class="faq-sector">
+        <h3 class="faq-sector-title">What payment methods do you accept?</h3>
+        <button type="button" class="faq-accordion">
+          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
+            <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="faq-sector-description visually-hidden">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </div>
+      </li>
+      <li class="faq-sector">
+        <h3 class="faq-sector-title">How can I contact you?</h3>
+        <button type="button" class="faq-accordion">
+          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
+            <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="faq-sector-description visually-hidden">
+          In the field of web development, there are various technologies and
+          programming languages. Typically, this includes a combination of
+          frontend (client side) and backend (server side) languages.
+        </div>
+      </li>
+      <li class="faq-sector">
+        <h3 class="faq-sector-title">What payment methods do you accept?</h3>
+        <button type="button" class="faq-accordion">
+          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
+            <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="faq-sector-description visually-hidden">
+          The terms of project implementation depend to a large extent on a
+          number of factors, such as the scope of the project, its complexity,
+          and the availability of resources. Determining exact deadlines is a
+          difficult task, and it usually occurs during the planning phase of the
+          project.
+        </div>
+      </li>
+      <li class="faq-sector">
+        <h3 class="faq-sector-title">
+          What does the process of developing a software product look like from
+          idea to implementation?
+        </h3>
+        <button type="button" class="faq-accordion">
+          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
+            <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="faq-sector-description visually-hidden">
+          Payment through credit and debit cards such as Visa, MasterCard,
+          specialized electronic payment systems such as PayPal, as well as
+          payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+        </div>
+      </li>
     </ul>
-</div>
+  </div>
 </section>
-
-
 
       <!-- /* Covers */ -->
       
@@ -566,7 +649,7 @@
     
 
       <!-- /* Reviews */ -->
-      <section class="reviews-section section" id="reviews">
+      <section class="reviews-section section container" id="reviews">
   <h2 class="reviews-title title">Reviews</h2>
   <div class="swiper-container swiper">
     <div class="swiper-wrapper reviews-swiper">
