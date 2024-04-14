@@ -138,6 +138,10 @@
     display: none;
   }
 
+  .mobile-menu-wrapper {
+    display: none;
+  }
+
   .menu-item {
     display: block;
   }
