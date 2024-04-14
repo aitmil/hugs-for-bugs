@@ -23,9 +23,9 @@
 
     
     <script type="module" crossorigin src="/hugs-for-bugs/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/hugs-for-bugs/assets/vendor-32dd1250.js">
+    <link rel="modulepreload" crossorigin href="/hugs-for-bugs/assets/vendor-5dc9fd23.js">
     <link rel="stylesheet" href="/hugs-for-bugs/assets/vendor-2aba1e47.css">
-    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-0eaa1097.css">
+    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-0effa47c.css">
   </head>
   <body>
     <!-- ======== Header ========= -->
@@ -35,6 +35,7 @@
     <nav class="header-navigation">
       <a class="header-wrapper" href="https://aitmil.github.io/hugs-for-bugs/">
         <img
+          class="work-together-picture-image"
           srcset="/hugs-for-bugs/assets/developer-image-2x-2415f1e0.png 2x"
           src="/hugs-for-bugs/assets/developer-image-1x-0478e8f0.png"
           alt="photo of the developer in glasses"
@@ -178,7 +179,7 @@
             media="(max-width: 768px)"
           />
 
-          <img src="/hugs-for-bugs/assets/about-me-desktop-8a4664e7.png" alt="portrait"/>
+          <img src="/hugs-for-bugs/assets/about-me-desktop-8a4664e7.png" alt="portrait" />
         </picture>
       </div>
     </div>
@@ -213,12 +214,14 @@
               cooperate with colleagues, exchanging ideas and finding optimal
               solutions. Professional maturity allows you to calmly cope with
               challenges and stressful situations, while maintaining a high
-              quality of work. <p>I am always looking for opportunities for
-              self-improvement. I actively study new technologies and practices
-              to stay abreast of the latest innovations. I have a strong
-              understanding of various programming languages, frameworks and
-              architectural concepts that allow me to create efficient and
-              scalable software.</p>
+              quality of work.
+              <p>
+                I am always looking for opportunities for self-improvement. I
+                actively study new technologies and practices to stay abreast of
+                the latest innovations. I have a strong understanding of various
+                programming languages, frameworks and architectural concepts
+                that allow me to create efficient and scalable software.
+              </p>
             </li>
           </ul>
         </li>
@@ -275,7 +278,7 @@
       </ul>
     </div>
 
-    <div class="swiper about-meswiper-container">
+    <!-- <div class="swiper about-meswiper-container">
       <ul class="swiper-wrapper about-meswiper-wrapper">
         <li class="swiper-slide about-meswiper-slide">HTML/CSS</li>
         <li class="swiper-slide about-meswiper-slide">JavaScript</li>
@@ -291,9 +294,49 @@
           height="28"
           aria-label="icon arrow right"
         >
-          <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow-narrow-right"></use>
+          <use href="./img/svg/symbol-defs.svg#icon-arrow-narrow-right"></use>
         </svg>
       </button>
+    </div> -->
+
+    <div class="swiper-skills-list">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper swiper-skills-list__wrapper">
+        <!-- <ul> -->
+        <!-- Slides -->
+        <div class="swiper-slide swiper-skills-slide">
+          <button class="skills-list-name">HTML/CSS</button>
+        </div>
+        <div class="swiper-slide swiper-skills-slide">
+          <button class="skills-list-name">JavaScript</button>
+        </div>
+        <div class="swiper-slide swiper-skills-slide">
+          <button class="skills-list-name">React</button>
+        </div>
+        <div class="swiper-slide swiper-skills-slide">
+          <button class="skills-list-name">Node.js</button>
+        </div>
+        <div class="swiper-slide swiper-skills-slide">
+          <button class="skills-list-name">React Native</button>
+        </div>
+        <div class="swiper-slide swiper-skills-slide">
+          <button class="skills-list-name">Soft skills</button>
+        </div>
+        <!-- </ul> -->
+      </div>
+
+      <!-- If we need navigation buttons -->
+
+      <div class="swiper-skill-list-next">
+        <svg
+          class="about-me-arrow"
+          width="28"
+          height="28"
+          aria-label="icon arrow right"
+        >
+          <use href="/hugs-for-bugs/assets/symbol-defs-e09aa784.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
