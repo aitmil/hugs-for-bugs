@@ -1,7 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // For mobile devices: Open menu when .mobile-menu-open-btn is clicked
-  const mobileMenuOpenBtn = document.querySelector('.mobile-menu-open-btn');
-  const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuOpenBtn = document.querySelector('.mobile-menu-open-btn');
+    const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
 
   mobileMenuOpenBtn.addEventListener('click', function () {
     mobileMenuWrapper.classList.toggle('is-open');
@@ -41,5 +40,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
 
