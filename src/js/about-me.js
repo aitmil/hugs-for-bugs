@@ -29,7 +29,6 @@ accordionHeaders.forEach(header => {
 document.querySelectorAll('.about-me__button').forEach(button => {
   button.addEventListener('click', function() {
     this.querySelector('.about-me__icon').classList.toggle('about-me__icon--rotate');
-    this.nextElementSibling.classList.toggle('visually-hidden');
   });
 });
 
