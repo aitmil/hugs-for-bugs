@@ -1,0 +1,5 @@
+
+1. https://github.com/aitmil/hugs-for-bugs/pull/2
+2. https://github.com/aitmil/hugs-for-bugs/pull/30
+3. https://github.com/aitmil/hugs-for-bugs/pull/39
+
