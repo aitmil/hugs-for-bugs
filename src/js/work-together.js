@@ -60,12 +60,13 @@ function submitForm(event) {
         alert('Invalid email, try again.');
     }
 }
+
 //--відкриваю модальне вікно
 function openModal() {
     document.querySelector('.backdrop').classList.add('active');
     document.querySelector('.modal').classList.add('active');
     document.addEventListener('keydown', closeModalOnEscape);
-    document.querySelector('backdrop').addEventListener('click', closeModalOnEscape)
+    document.querySelector('.backdrop').addEventListener('click', closeModalOnEscape)
 }
 
 //--закриваю модальне вікно по кліку на backdrop
@@ -73,7 +74,7 @@ function closeModal() {
     document.querySelector('.backdrop').classList.remove('active');
     document.querySelector('.modal').classList.remove('active');
     document.removeEventListener('keydown', closeModalOnEscape);
-    document.querySelector('backdrop').removeEventListener('click', closeModalOnEscape)
+    document.querySelector('.backdrop').removeEventListener('click', closeModalOnEscape)
 }
 
 //--закриваю модальне вікно по кліку на іконку

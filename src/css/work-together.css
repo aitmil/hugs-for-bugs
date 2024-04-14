@@ -1,9 +1,13 @@
 #client-email.invalid {
     border-bottom: 1px solid var(--error-text-color);
+    color: var(--error-text-color);
+    content: 'Invalid email, try again';
 }
 
 #client-email.valid {
     border-bottom: 1px solid var(--success-text-color);
+    color: var(--success-text-color);
+    content: 'Succes';
 }
 .work-together-logo-title {
   display: flex;
