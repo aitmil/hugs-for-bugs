@@ -10,11 +10,11 @@
           alt="photo of the developer in glasses"
           width="44"
         />
-
-        <svg class="header-icon" width="84" height="19" aria-label="icon-cross">
-          <use href="./img/svg/symbol-defs.svg#icon-jefferson"></use>
-        </svg>
+        <span>jefferson*</span>
       </a>
+
+      <!-- ----- DROPDOWN MENU ----- -->
+
       <div class="menu-item">
         <a href="#" class="dropdown">Menu</a>
         <ul class="dropdown-content">
@@ -32,6 +32,7 @@
           </li>
         </ul>
       </div>
+      <!-- ------------------------- -->
     </nav>
 
     <button class="mobile-menu-open-btn" type="button">
@@ -45,37 +46,41 @@
       </svg>
     </button>
 
-    <a class="header-link order-link" href="#work-together">Order the project</a>
+    <a class="header-link order-link" href="#work-together"
+      >Order the project</a
+    >
   </div>
+
+  <!-- ------- MOBILE MENU ------- -->
 
   <div class="mobile-menu-wrapper">
-    <div class="container mobile-menu-container">
-      <button class="mobile-menu-close-btn" type="button">
-        <svg
-          class="modal-close-button-icon"
-          width="28"
-          height="28"
-          aria-label="close mobile icon"
+    <button class="mobile-menu-close-btn" type="button">
+      <svg
+        class="modal-close-button-icon"
+        width="28"
+        height="28"
+        aria-label="close mobile icon"
+      >
+        <use href="./img/svg/symbol-defs.svg#icon-cross"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link menu-studio" href="about-me"
+          >About me</a
         >
-          <use href="./img/svg/symbol-defs.svg#icon-cross"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu">
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link link menu-studio" href="about-me">About me</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="benefits">Benefits</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Projects</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="faq">FAQ</a>
-        </li>
-        <a class="header-link-mobile" href="#work-together">Order the project</a>
-      </ul>
-    </div>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="benefits">Benefits</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="">Projects</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-link link" href="faq">FAQ</a>
+      </li>
+    </ul>
+    <a class="header-link-mobile" href="#work-together">Order the project</a>
   </div>
 </header>
-

@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuOpenBtn = document.querySelector('.mobile-menu-open-btn');
-    const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
+document.addEventListener('DOMContentLoaded', function () {
+  const mobileMenuOpenBtn = document.querySelector('.mobile-menu-open-btn');
+  const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
 
   mobileMenuOpenBtn.addEventListener('click', function () {
-    mobileMenuWrapper.classList.toggle('is-open');
+    mobileMenuWrapper.classList.add('is-open');
   });
 
   const dropdownLinks = document.querySelectorAll('.dropdown');
@@ -23,4 +23,3 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenuWrapper.classList.remove('is-open');
   });
 });
-
