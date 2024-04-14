@@ -2,7 +2,7 @@ const section = document.getElementById('covers');
 
         
         function startAnimation() {
-            const ul = document.querySelector('.rolling-images ul');
+            const ul = document.querySelector(' .covers-list');
             ul.style.animationPlayState = 'running';
         }
 
@@ -18,4 +18,5 @@ const section = document.getElementById('covers');
 
 observer.observe(section);
         
+
 
