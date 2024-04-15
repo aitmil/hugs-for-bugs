@@ -77,7 +77,7 @@
 
 
 
-.review-buttons-container{
+.swiper-container .review-buttons-container{
     display: flex;
     justify-content: center;
     gap: 12px;
