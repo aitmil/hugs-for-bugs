@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-width: 320px;
+  /* min-width: 320px; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 168px;
@@ -45,7 +45,6 @@
   font-size: 50px;
   margin-left: auto;
   margin-right: auto;
- 
 }
 
 .hero-list {
@@ -63,8 +62,8 @@
   height: 37px;
 }
 
-.hero-item-mail{
-    border: 1px solid var(--border-color);
+.hero-item-mail {
+  border: 1px solid var(--border-color);
   border-radius: 60px;
   padding: 10px 12px;
   width: 37px;
@@ -76,6 +75,7 @@
   gap: 4px;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 
 .hero-link {
@@ -86,26 +86,24 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
+    /* min-width: 768px; */
   }
-  .hero-title{
+  .hero-title {
     width: 632px;
     font-size: 90px;
   }
-  .hero-social{
-    justify-content:flex-end;
+  .hero-social {
+    justify-content: flex-end;
   }
 }
 
-
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
   .hero {
-    min-width: 1440px;
+    /* min-width: 1440px; */
   }
 
-  .hero-title{
+  .hero-title {
     width: 1184px;
     font-size: 90px;
   }
-
 }
