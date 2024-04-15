@@ -58,20 +58,8 @@
   }
 }
 
-.toggle-btn {
-  display: transparent;
-}
+/* ///////////////////////// */
 
-.toggle-btn {
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-}
-.review-user-comment-collapsed {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 
 .reviews-container{
     width: 100%;
@@ -80,25 +68,10 @@
 
 
 
-.swiper-buttons-container{
-
-        
-}
-
-.swiper-button-next {}
-
-.reviews-btn-next {}
-
-.project-section-arrow-right-svg {}
-
-.swiper-button-prev {}
-
-.reviews-btn-prev {}
-
-.project-section-arrow-left-svg {}
-
-.swiper-container .swiper {
-/* position: static; */
+.review-buttons-container{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 }
 
 
