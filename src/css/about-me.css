@@ -1,11 +1,19 @@
 /* ====== SWIPER STYLES ====== */
-
-.swiper-skills-list {
-  overflow: hidden;
+.swipper-section {
+  width: 100%;
   position: relative;
-  width: 343px;
 }
-.swiper-skills-list .swiper-wrapper {
+
+.swiper-skills-list-container {
+  overflow: hidden;
+  position: absolute;
+  width: 260px;
+  right: 36px;
+  /* left: 0; */
+  top: 0;
+}
+
+.swiper-skills-list-container .swiper-wrapper {
   width: 260px;
 }
 
@@ -13,13 +21,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  max-width: 100%;
   width: 130px;
   height: 130px;
-
   border: 1px solid var(--border-color);
   border-radius: 50%;
-
   color: inherit;
   background-color: inherit;
 }
@@ -33,38 +39,62 @@
   width: 50px;
   margin-top: 20px;
   cursor: pointer;
+  
+    position: absolute;
+   left: 260px;
+    bottom: 23%;
+    z-index: 5;
+  }
 
-  position: absolute;
-  right: 0;
-  bottom: 23%;
-  z-index: 5;
-}
+
 .swiper-skill-list-next svg {
   display: block;
   fill: var(--border-color);
 }
 
-@media screen and (min-width: 768px) {
-  .swiper-skills-list {
-    width: 704px;
-  }
+.swiper-skill-list-button {
+  background-color: #1c1d20;
+  border: 0;
+}
 
-  .swiper-skills-list .swiper-wrapper {
+@media screen and (min-width: 768px) {
+  .swiper-skills-list-container {
     width: 600px;
   }
 
+  .swiper-skill-list-next svg {
+    height: 40px;
+    width: 40px;
+  }
+
   .swiper-skills-slide .swiper-slide-container {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .swiper-slide-container-text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .swiper-skills-list {
-    width: 1312px;
+  .swiper-skills-list-container {
+    width: 1200px;
   }
 
-  .swiper-skills-list .swiper-wrapper {
+  .swiper-slide-container-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+ .swiper-skill-list-next svg {
+    height: 40px;
+    width: 40px;
+  }
+
+
+  .swiper-skills-list-container .swiper-wrapper {
     width: 1200px;
   }
 
