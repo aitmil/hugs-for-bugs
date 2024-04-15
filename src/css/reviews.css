@@ -63,16 +63,6 @@
     width: 100%;
     height: 100%;
 }
-
-
-
-.swiper-container .review-buttons-container{
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-}
-
-
  
 .swiper-container .swiper-button-prev  {
    position: absolute;
@@ -91,8 +81,6 @@
     width: 68px;
     display: flex;
 }
-
-
 
 .reviews-swiper-btn{
  border-radius: 50%;
