@@ -18,6 +18,3 @@ const projectsSwiper = new Swiper('.project-lists', {
   },
 });
 
-
-
-
