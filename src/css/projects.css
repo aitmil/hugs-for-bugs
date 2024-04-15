@@ -104,6 +104,7 @@ max-width: fit-content;
 }
 
 /* ///////Стилі на кнопку/////////// */
+
 .project-section-btn{
   border-radius: 50%;
     width: 52px;
@@ -112,6 +113,7 @@ max-width: fit-content;
     background-color: transparent;
     height: 52px;
 }
+/* //////////////////////////// */
 
 .project-section-dark-part {
   padding: 100px 16px;
