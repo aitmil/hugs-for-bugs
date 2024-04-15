@@ -1,4 +1,4 @@
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -39,7 +39,7 @@
 }
 
 .modal.active,
-.overlay.active {
+.backdrop.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -76,4 +76,4 @@
   .modal-decription {
     width: 364px;
   }
-}
+} */

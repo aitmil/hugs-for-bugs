@@ -1,10 +1,3 @@
-#client-email.invalid {
-    border-bottom: 1px solid var(--error-text-color);
-}
-
-#client-email.valid {
-    border-bottom: 1px solid var(--success-text-color);
-}
 .work-together-logo-title {
   display: flex;
   margin-bottom: 111px;
@@ -14,6 +7,7 @@
   width: 44px;
   height: 44px;
   background-color: var(--primary-dark-color);
+  margin-bottom: 4px;
 }
 .work-together-picture-image {
   border-radius: 12px;
@@ -31,7 +25,8 @@
 }
 .work-together-second-span {
   position: absolute;
-  left: -53px;
+  left: -52px;
+  top: 80px;
 }
 
 .work-together-form {
@@ -41,7 +36,8 @@
 
 .work-together-form-input {
   margin-bottom: 16px;
-  min-width: 343px;
+  min-width: 320px;
+  max-width: 343px; 
   padding-bottom: 20px;
   font-size: 16px;
   font-weight: 500;
@@ -58,7 +54,8 @@
   transition: var(--transition);
 }
 .work-together-form-comment {
-  min-width: 343px;
+  min-width: 320px;
+  max-width: 343px;
   height: 44px;
   resize: none;
   font-size: 16px;
@@ -88,6 +85,7 @@
 
 .work-together-button:focus,
 .work-together-button:hover {
+  outline: none;
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -118,12 +116,73 @@
 
 .contacts-link:hover,
 .contacts-link:focus {
+  outline: none;
   border: 1px solid var(--primary-light-color);
   transition: var(--transition);
 }
 
+/* MODAL */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 16, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 40;
+  transform: translate(-50%, -50%);
+  padding: 64px 32px;
+  max-width: 343px;
+  max-height: 276px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--primary-dark-color);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.modal.active,
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-close-button {
+  position: absolute;
+  display: block;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background-color: var(--primary-dark-color);
+}
+
+.modal-title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modal-description {
+  width: 279px;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
-.work-together-picture-image {
+  .work-together-picture-image {
     width: 70px;
   }
 
@@ -172,14 +231,32 @@
   }
 
   .work-together-contacts-list {
-    min-width: 418px;
+    max-width: 418px;
     height: 55px;
     gap: 8px;
+  }
+  .work-together-contacts-list{
+    align-items: baseline;
   }
   .contacts-link {
     font-size: 16px;
     padding: 18px 32px;
     border-radius: 60px;
+  }
+}
+
+
+/* MODAL */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 492px;
+    max-height: 246px;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+  .modal-description {
+    width: 364px;
   }
 }
 

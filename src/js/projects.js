@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const projectsSwiper = new Swiper('.projects-swiper', {
+
   modules: [Navigation],
   keyboard: {
     enabled: true,
@@ -17,3 +18,4 @@ const projectsSwiper = new Swiper('.projects-swiper', {
     prevEl: '.swiper-btn-prev',
   },
 });
+

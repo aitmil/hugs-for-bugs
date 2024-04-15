@@ -1,94 +1,174 @@
-import { createUser } from './api';
+import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
+// Function to limit input length and add ellipsis
+function limitAndEllipsis(event) {
+  const input = event.target;
+  const maxLength = 50;
+  if (input.value.length > maxLength) {
+    input.value = input.value.substring(0, maxLength) + '...';
+  }
+}
 
 const emailInput = document.getElementById('client-email');
 const commentInput = document.getElementById('client-comment');
-const maxLength = 50;
 
-emailInput.addEventListener('input', limitAndEllipsis);
-commentInput.addEventListener('input', limitAndEllipsis);
-
-//--обмежую довжину тексту+...
-function limitAndEllipsis(event) {
-    const input = event.target;
-    if (input.value.length > maxLength) {
-        input.value = input.value.substring(0, maxLength) + '...';
-    }
+if (emailInput && commentInput) {
+  emailInput.addEventListener('input', limitAndEllipsis);
+  commentInput.addEventListener('input', limitAndEllipsis);
 }
 
-//--очищаю поле форми
+// Function to clear form fields
 function clearForm() {
+  const emailInput = document.getElementById('client-email');
+  const commentInput = document.getElementById('client-comment');
+  if (emailInput && commentInput) {
     emailInput.value = '';
     commentInput.value = '';
+  }
 }
 
-//--перевірка валідності email
+// Function to validate email format
 function validateEmail(email) {
-    const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-    return pattern.test(email);
+  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  return pattern.test(email);
 }
 
-//--відправляю дані на сервер
+// Function to send form data to server
 function sendFormData(email, comment) {
-    const formData = {
-        email: email,
-        comment: comment
-    };
-createUser(formData)
-        .then(response => {
-            console.log('Response from server:', response);
-            openModal();
-            clearForm();
-        })
-        .catch(error => {
-            console.error('Error sending request:', error);
-            alert('Error sending request. Please try again.');
+  const formData = {
+    email: email,
+    comment: comment,
+  };
+  axios
+    .post('https://portfolio-js.b.goit.study/api/requests', formData)
+    .then(response => {
+      console.log('Response from server:', response);
+      if (response.status === 201) {
+        openModal();
+        clearForm();
+      } else {
+        throw new Error('Unexpected response from server');
+      }
+    })
+    .catch(error => {
+      console.error('Error sending request:', error);
+      if (error.response) {
+        if (error.response.status === 400) {
+          iziToast.error({
+            title: 'Error',
+            message: 'Bad request. Please check your input and try again.',
+            position: 'topRight',
+          });
+        } else {
+          iziToast.error({
+            title: 'Error',
+            message: 'Server error. Please try again later.',
+            position: 'topRight',
+          });
+        }
+      } else if (error.request) {
+        iziToast.error({
+          title: 'Error',
+          message:
+            'No response from server. Please check your internet connection and try again.',
+          position: 'topRight',
         });
+      } else {
+        iziToast.error({
+          title: 'Error',
+          message: 'Failed to send request. Please try again.',
+          position: 'topRight',
+        });
+      }
+    });
 }
 
-//--обробляю події відправки форми
+// Function to submit the form
 function submitForm(event) {
-    event.preventDefault(); 
-    
-    if (validateEmail(emailInput.value) && commentInput.trim() !== '') {
-        sendFormData(emailInput.value, commentInput.value);
-        emailInput.classList.remove('invalid');
-        emailInput.classList.add('valid');
-        alert('Success!');
-    } else {
-        emailInput.classList.remove('valid');
-        emailInput.classList.add('invalid');
-        alert('Invalid email, try again.');
-    }
+  event.preventDefault();
+
+  const emailInput = document.getElementById('client-email');
+  const commentInput = document.getElementById('client-comment');
+
+  if (
+    emailInput &&
+    commentInput &&
+    validateEmail(emailInput.value) &&
+    commentInput.value.trim() !== ''
+  ) {
+    sendFormData(emailInput.value, commentInput.value);
+    emailInput.classList.remove('invalid');
+    emailInput.classList.add('valid');
+  } else {
+    emailInput.classList.remove('valid');
+    emailInput.classList.add('invalid');
+    iziToast.error({
+      title: 'Error',
+      message: 'Invalid email or comment. Please try again.',
+      position: 'topRight',
+    });
+  }
 }
-//--відкриваю модальне вікно
+
+// Function to open the modal
 function openModal() {
-    document.querySelector('.backdrop').classList.add('active');
-    document.querySelector('.modal').classList.add('active');
+  const backdrop = document.querySelector('.backdrop');
+  const modal = document.querySelector('.modal');
+  if (backdrop && modal) {
+    backdrop.classList.add('active');
+    modal.classList.add('active');
     document.addEventListener('keydown', closeModalOnEscape);
-    document.querySelector('backdrop').addEventListener('click', closeModalOnEscape)
+    backdrop.addEventListener('click', closeModal);
+  }
 }
 
-//--закриваю модальне вікно по кліку на backdrop
+// Function to close the modal
 function closeModal() {
-    document.querySelector('.backdrop').classList.remove('active');
-    document.querySelector('.modal').classList.remove('active');
+  const backdrop = document.querySelector('.backdrop');
+  const modal = document.querySelector('.modal');
+  if (backdrop && modal) {
+    backdrop.classList.remove('active');
+    modal.classList.remove('active');
     document.removeEventListener('keydown', closeModalOnEscape);
-    document.querySelector('backdrop').removeEventListener('click', closeModalOnEscape)
+    backdrop.removeEventListener('click', closeModal);
+  }
 }
 
-//--закриваю модальне вікно по кліку на іконку
-function closeModalOnClick(event) {
-    if (event.target.classList.contains('modal-close-button')) {
-        closeModal();
-    }
-}
-
-//--закриваю модальне вікно по кліку на escape
+// Function to close the modal when Escape key is pressed
 function closeModalOnEscape(event) {
-    if (event.key === 'Escape') {
-        closeModal();
-    }
+  if (event.key === 'Escape') {
+    closeModal();
+  }
 }
 
-//-- додаю обробник подій на закриття модалки
-document.querySelector('.modal-close-button').addEventListener('click', closeModal);
+// Event listener for form submission
+const form = document.querySelector('.work-together-form');
+if (form) {
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('client-email');
+    const commentInput = document.getElementById('client-comment');
+
+    if (
+      emailInput &&
+      commentInput &&
+      validateEmail(emailInput.value) &&
+      commentInput.value.trim() !== ''
+    ) {
+      sendFormData(emailInput.value, commentInput.value);
+      emailInput.classList.remove('invalid');
+      emailInput.classList.add('valid');
+    } else {
+      emailInput.classList.remove('valid');
+      emailInput.classList.add('invalid');
+      iziToast.error({
+        title: 'Error',
+        message: 'Invalid email or comment. Please try again.',
+        position: 'topRight',
+      });
+    }
+  });
+}
