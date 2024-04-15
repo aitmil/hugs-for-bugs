@@ -1,5 +1,5 @@
 /* ====== SWIPER STYLES ====== */
-.swipper-section {
+.swiper-section {
   width: 100%;
   /* position: relative; */
 }
@@ -38,12 +38,11 @@
   height: 50px;
   width: 50px;
   margin-top: 20px;
-  cursor: pointer;
 
-  position: relative;
-  left: 50%;
+  /* position: relative;
+  transform: translateX(50%);
   bottom: 23%;
-  z-index: 5;
+  z-index: 5; */
 }
 
 .swiper-skill-list-next svg {
@@ -55,17 +54,18 @@
   background-color: #1c1d20;
   border: 0;
 }
-@media screen and (min-width: 375px) {
-  .swiper-skills-list-container {
-    width: 343px;
-  }
 
-  .swiper-skill-list-next {
-    margin-top: 20px;
-    /* left: 50%; */
-    /* bottom: 23%; */
-    z-index: 5;
+@media screen and (min-width: 375px) {
+  .swiper-section .swiper {
+    margin-left: 0;
   }
+}
+
+.swiper-skill-list-next {
+  margin-top: 20px;
+  /* left: 50%; */
+  /* bottom: 23%; */
+  z-index: 5;
 }
 
 @media screen and (min-width: 768px) {

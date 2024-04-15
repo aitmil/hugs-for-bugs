@@ -1,4 +1,4 @@
-.projects-swiper .swiper-button-prev:after,
+.projects-swiper .swiper-button-prev::after,
 .swiper-rtl .swiper-button-next::after {
   content: '';
 }
@@ -6,6 +6,8 @@
 .project-section {
   padding: 0 16px;
   max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -21,9 +23,20 @@
 }
 
 .project-section-light-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
   background-color: var(--primary-light-color);
   padding: 32px;
   border-radius: 24px 24px 0 0;
+}
+.light-part-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    gap: 45px;
 }
 
 .project-section-skills-list {
@@ -47,7 +60,6 @@
 
 .project-section-title {
   color: var(--primary-dark-color);
-  margin-bottom: 32px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 24px;
@@ -56,6 +68,8 @@
 }
 
 .see-project-ref {
+max-width: fit-content;
+
   padding: 13px 32px;
   background-color: var(--button-color);
   border-color: transparent;
@@ -66,16 +80,6 @@
 .see-project-ref:hover,
 .see-project-ref:focus {
   background-color: var(--accent-color);
-}
-
-.project-lists {
-  width: 343px;
-  height: 896px;
-}
-
-.projects-slide {
-  width: 343px;
-  height: 812px;
 }
 
 .project-section-buttons {
@@ -123,64 +127,59 @@
 
 @media screen and (min-width: 768px) {
   .project-section {
-    max-width: 768px;
-    padding: 32px;
-    /* margin-bottom: 64px; */
+    min-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
   }
   .project-section-light-part {
     padding: 64px;
-  }
-
-  .project-section-skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 164px;
+    border-radius: 24px 24px 0 0;
   }
 
   .project-section-title {
-    font-size: 40px;
     max-width: 494px;
+    font-size: 44px;
+    line-height: 100%;
   }
+    .light-part-wrap {
+      gap: 32px;
+    }
+
   .project-section-dark-part {
     padding: 120px 45px;
     margin-bottom: 64px;
   }
-
-  .svg-arrow {
-    width: 32px;
-    height: 32px;
-  }
-
-  .swiper-btn {
-    width: 68px;
-    height: 68px;
-  }
-  .project-section-buttons {
-    gap: 20px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
+  .project-section {
+    min-width: 1440px;
+    margin: 0 auto;
+  }
+
   .projects-swiper-slide {
     display: flex;
     flex-direction: row;
-    flex-basis: 50%;
-    gap: 0;
-    margin: 64px;
+    gap: 0px;
+    margin-bottom: 64px;
   }
 
-  .project-section {
-    max-width: 1440px;
-    padding: 32px;
+  .project-section-title {
+    max-width: 494px;
+    font-size: 44px;
+    line-height: 100%;
   }
   .project-section-light-part {
+    padding: 64px;
     border-radius: 24px 0 0 24px;
+    min-width: 50%;
   }
-
   .project-section-dark-part {
-    padding: 120px 37px;
+    padding: 120px 45px;
+    margin-bottom: 0;
     border-radius: 0 24px 24px 0;
-    margin: 0;
+    min-width: 50%;
+
   }
 }

@@ -76,25 +76,6 @@ body {
   color: var(--text-color);
 }
 
-/* .btn {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  color: var(--primary-light-color);
-
-  border-radius: 60px;
-  border: 0 solid transparent;
-
-  background-color: var(--button-color);
-
-  transition: background-color var(--transition), border var(--transition);
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: var(--accent-color);
-} */
-
 .order-link {
   display: flex;
   justify-content: center;
@@ -108,6 +89,10 @@ body {
 
 .order-link:hover {
   background: var(--accent-color);
+}
+
+a:focus {
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
