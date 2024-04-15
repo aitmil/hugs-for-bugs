@@ -1,4 +1,4 @@
-.projects-swiper .swiper-button-prev:after,
+.projects-swiper .swiper-button-prev::after,
 .swiper-rtl .swiper-button-next::after {
   content: '';
 }
