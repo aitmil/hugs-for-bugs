@@ -2,12 +2,12 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 document.addEventListener("DOMContentLoaded", function() {
-    const accordions = document.querySelectorAll('.faq-accordion');
+    const sectors = document.querySelectorAll('.faq-sector');
 
-    accordions.forEach(accordion => {
-        accordion.addEventListener('click', function() {
+    sectors.forEach(sector => {
+        sector.addEventListener('click', function() {
             const arrow = this.querySelector('.faq-arrow');
-            const description = this.nextElementSibling;
+            const description = this.querySelector('.faq-sector-description');
 
             arrow.classList.toggle('rotate');
             description.classList.toggle('visually-hidden');
@@ -19,5 +19,3 @@ document.addEventListener("DOMContentLoaded", function() {
         showFirstItem: false,
     });
 });
-
-

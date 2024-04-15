@@ -1,82 +1,74 @@
-.reviews-section {
-    margin: 0 auto;
-    max-width: 344px;
-}
+/* .reviews-section {
+  margin: 0 auto; */
+/* max-width: 344px; */
+/* } */
 
 .reviews-carusel {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
-.reviews-title{
-    padding-bottom: 32px;
-    margin-left: 16px;
-    margin-right: 16px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.4);
+.reviews-title {
+  padding-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
 }
 
 .user-review-container {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 20px;
-    width: 332px;
-    height: 302px;
-    padding: 32px 24px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  width: 332px;
+  height: 302px;
+  padding: 32px 24px;
 }
 
 .review-user-photo {
-    height: 48px;
-    width: 48px;
-    border-radius: 10px;
-    margin-bottom: 32px;
+  height: 48px;
+  width: 48px;
+  border-radius: 10px;
+  margin-bottom: 32px;
 }
 
 .user-data-review-container {
 }
 
 .review-user-name {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .review-user-comment {
-    margin: 0;
-    text-overflow: ellipsis;
+  margin: 0;
+  text-overflow: ellipsis;
 }
-
-
-
-
 
 @media (min-width: 768px) {
-    .reviews-section {
-        max-width: 704px;
-    }
+  .reviews-section {
+    /* max-width: 704px; */
+  }
 }
-
 
 @media (min-width: 1440px) {
-
-    .reviews-section {
-        max-width: 1376px;
-    }
-}
-
-
-
-.toggle-btn {
-    display: transparent;
+  .reviews-section {
+    /* max-width: 1376px; */
+  }
 }
 
 .toggle-btn {
-    background: none;
-    border: none;
-    color:inherit;
-    cursor: pointer;
-} 
+  display: transparent;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
 .review-user-comment-collapsed {
-    overflow: hidden;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

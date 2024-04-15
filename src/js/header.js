@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // For mobile devices: Open menu when .mobile-menu-open-btn is clicked
   const mobileMenuOpenBtn = document.querySelector('.mobile-menu-open-btn');
   const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
 
   mobileMenuOpenBtn.addEventListener('click', function () {
-    mobileMenuWrapper.classList.toggle('is-open');
+    mobileMenuWrapper.classList.add('is-open');
   });
 
   const dropdownLinks = document.querySelectorAll('.dropdown');
@@ -25,8 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -41,4 +38,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-

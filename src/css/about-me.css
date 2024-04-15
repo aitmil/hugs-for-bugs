@@ -1,32 +1,37 @@
 /* ====== SWIPER STYLES ====== */
-
-.swiper-skills-list {
-  overflow: hidden;
+.swipper-section {
+  width: 100%;
   position: relative;
-  width: 343px;
 }
-.swiper .swiper-skills-list .swiper-wrapper {
+
+.swiper-skills-list-container {
+  overflow: hidden;
+  position: absolute;
+  width: 260px;
+  right: 36px;
+  /* left: 0; */
+  top: 0;
+}
+
+.swiper-skills-list-container .swiper-wrapper {
   width: 260px;
 }
 
-/* .swiper-slide .swiper-skills-slide .swiper-slide-active button {
-  background-color: var(--button-color);
-} */
-
-.color-slide {
-  background-color: var(--button-color);
-}
-
-.swiper-skills-slide button {
+.swiper-skills-slide .swiper-slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 130px;
+  height: 130px;
   border: 1px solid var(--border-color);
   border-radius: 50%;
   color: inherit;
   background-color: inherit;
 }
 
-.swiper-skills-slide button:focus,
-.swiper-skills-slide button:active {
-  outline: none;
+.swiper-slide-active .swiper-slide-container {
+  background-color: var(--accent-color);
 }
 
 .swiper-skill-list-next {
@@ -34,49 +39,66 @@
   width: 50px;
   margin-top: 20px;
   cursor: pointer;
+  
+    position: absolute;
+   left: 260px;
+    bottom: 23%;
+    z-index: 5;
+  }
 
-  position: absolute;
-  right: 0;
-  bottom: 40%;
-  z-index: 5;
-}
+
 .swiper-skill-list-next svg {
   display: block;
   fill: var(--border-color);
 }
 
-.swiper-skills-slide button {
-  border: 1px solid var(--border-color);
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+.swiper-skill-list-button {
+  background-color: #1c1d20;
+  border: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-skills-list {
-    width: 704px;
-  }
-
-  .swiper .swiper-skills-list .swiper-wrapper {
+  .swiper-skills-list-container {
     width: 600px;
   }
 
-  .swiper-skills-slide button {
-    width: 150px;
-    height: 150px;
+  .swiper-skill-list-next svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .swiper-skills-slide .swiper-slide-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .swiper-slide-container-text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .swiper-skills-list {
-    width: 1312px;
-  }
-
-  .swiper .swiper-skills-list .swiper-wrapper {
+  .swiper-skills-list-container {
     width: 1200px;
   }
 
-  .swiper-skills-slide button {
+  .swiper-slide-container-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+ .swiper-skill-list-next svg {
+    height: 40px;
+    width: 40px;
+  }
+
+
+  .swiper-skills-list-container .swiper-wrapper {
+    width: 1200px;
+  }
+
+  .swiper-skills-slide .swiper-slide-container {
     width: 200px;
     height: 200px;
   }
