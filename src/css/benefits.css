@@ -51,6 +51,7 @@
 
 .benefits-button-container:hover {
     background-color: rgba(237, 59, 68);
+    transition: 2s;
 }
 
 .benefits-link {
