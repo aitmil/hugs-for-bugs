@@ -88,11 +88,7 @@
 }
 
 .swiper-btn {
-<<<<<<< Updated upstream
   border: 1px solid rgba(250, 250, 250, 0.5);
-=======
-  border: 1px solid var(--border-color);
->>>>>>> Stashed changes
   border-radius: 60px;
   width: 52px;
   height: 52px;
@@ -112,8 +108,6 @@
   border-radius: 0 0 24px 24px;
   margin-bottom: 32px;
 }
-<<<<<<< Updated upstream
-=======
 
 .project-section-img {
   min-width: 100%;
@@ -182,4 +176,3 @@
     margin: 0;
   }
 }
->>>>>>> Stashed changes
