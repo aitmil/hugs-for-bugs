@@ -3,7 +3,8 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-const projectsSwiper = new Swiper('.project-lists', {
+const projectsSwiper = new Swiper('.projects-swiper', {
+
   modules: [Navigation],
   keyboard: {
     enabled: true,
@@ -13,8 +14,8 @@ const projectsSwiper = new Swiper('.project-lists', {
   },
   watchOverflow: true,
   navigation: {
-    nextEl: '.swipe-btn-next',
-    prevEl: '.swipe-btn-prev',
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
   },
 });
 
