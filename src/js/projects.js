@@ -17,3 +17,7 @@ const projectsSwiper = new Swiper('.project-lists', {
     prevEl: '.swipe-btn-prev',
   },
 });
+
+
+
+
