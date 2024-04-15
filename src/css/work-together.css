@@ -1,9 +1,13 @@
 #client-email.invalid {
     border-bottom: 1px solid var(--error-text-color);
+    color: var(--error-text-color);
+    content: 'Invalid email, try again';
 }
 
 #client-email.valid {
     border-bottom: 1px solid var(--success-text-color);
+    color: var(--success-text-color);
+    content: 'Succes';
 }
 .work-together-logo-title {
   display: flex;
@@ -43,7 +47,7 @@
 
 .work-together-form-input {
   margin-bottom: 16px;
-  min-width: 343px;
+  /* width: 343px; */
   padding-bottom: 20px;
   font-size: 16px;
   font-weight: 500;
@@ -60,7 +64,7 @@
   transition: var(--transition);
 }
 .work-together-form-comment {
-  min-width: 343px;
+  /* min-width: 343px; */
   height: 44px;
   resize: none;
   font-size: 16px;
@@ -125,7 +129,7 @@
 }
 
 @media screen and (min-width: 768px) {
-.work-together-picture-image {
+  .work-together-picture-image {
     width: 70px;
   }
 
@@ -174,7 +178,7 @@
   }
 
   .work-together-contacts-list {
-    min-width: 418px;
+    /* min-width: 418px; */
     height: 55px;
     gap: 8px;
   }

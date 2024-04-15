@@ -116,6 +116,7 @@ function openModal() {
 
 // Function to close the modal
 function closeModal() {
+
     const backdrop = document.querySelector('.work-together-section');
     const modal = document.querySelector('.work-together-form');
     if (backdrop && modal) {
@@ -123,6 +124,7 @@ function closeModal() {
         modal.classList.remove('active');
         document.removeEventListener('keydown', closeModalOnEscape);
         backdrop.removeEventListener('click', closeModal);
+
     }
 }
 
