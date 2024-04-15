@@ -11,6 +11,14 @@ function limitAndEllipsis(event) {
   }
 }
 
+const emailInput = document.getElementById('client-email');
+const commentInput = document.getElementById('client-comment');
+
+if (emailInput && commentInput) {
+  emailInput.addEventListener('input', limitAndEllipsis);
+  commentInput.addEventListener('input', limitAndEllipsis);
+}
+
 // Function to clear form fields
 function clearForm() {
   const emailInput = document.getElementById('client-email');
@@ -40,11 +48,6 @@ function sendFormData(email, comment) {
       if (response.status === 201) {
         openModal();
         clearForm();
-        iziToast.success({
-          title: 'Success',
-          message: 'Your request has been successfully sent!',
-          position: 'topRight',
-        });
       } else {
         throw new Error('Unexpected response from server');
       }
@@ -111,8 +114,8 @@ function submitForm(event) {
 
 // Function to open the modal
 function openModal() {
-  const backdrop = document.querySelector('.work-together-section');
-  const modal = document.querySelector('.work-together-form');
+  const backdrop = document.querySelector('.backdrop');
+  const modal = document.querySelector('.modal');
   if (backdrop && modal) {
     backdrop.classList.add('active');
     modal.classList.add('active');
@@ -123,8 +126,8 @@ function openModal() {
 
 // Function to close the modal
 function closeModal() {
-  const backdrop = document.querySelector('.work-together-section');
-  const modal = document.querySelector('.work-together-form');
+  const backdrop = document.querySelector('.backdrop');
+  const modal = document.querySelector('.modal');
   if (backdrop && modal) {
     backdrop.classList.remove('active');
     modal.classList.remove('active');
@@ -140,16 +143,32 @@ function closeModalOnEscape(event) {
   }
 }
 
-// Event listeners for input fields
-const emailInput = document.getElementById('client-email');
-const commentInput = document.getElementById('client-comment');
-if (emailInput && commentInput) {
-  emailInput.addEventListener('input', limitAndEllipsis);
-  commentInput.addEventListener('input', limitAndEllipsis);
-}
-
 // Event listener for form submission
 const form = document.querySelector('.work-together-form');
 if (form) {
-  form.addEventListener('submit', submitForm);
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('client-email');
+    const commentInput = document.getElementById('client-comment');
+
+    if (
+      emailInput &&
+      commentInput &&
+      validateEmail(emailInput.value) &&
+      commentInput.value.trim() !== ''
+    ) {
+      sendFormData(emailInput.value, commentInput.value);
+      emailInput.classList.remove('invalid');
+      emailInput.classList.add('valid');
+    } else {
+      emailInput.classList.remove('valid');
+      emailInput.classList.add('invalid');
+      iziToast.error({
+        title: 'Error',
+        message: 'Invalid email or comment. Please try again.',
+        position: 'topRight',
+      });
+    }
+  });
 }
