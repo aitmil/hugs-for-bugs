@@ -20,10 +20,13 @@
 <path fill="#fafafa" style="fill: var(--color1, #fafafa)" d="M2.878 7.012h3.416v19.376c0.011 1.215-0.2 2.24-0.633 3.075s-1.065 1.464-1.898 1.887c-0.833 0.434-1.856 0.651-3.068 0.651h-0.696v-3.042h0.553c0.822 0 1.413-0.222 1.771-0.667s0.543-1.085 0.554-1.92v-19.36zM4.57 4.214c-0.601 0-1.112-0.206-1.534-0.618s-0.633-0.906-0.633-1.48c0-0.586 0.211-1.085 0.633-1.497s0.933-0.618 1.534-0.618c0.59 0 1.096 0.206 1.518 0.618 0.432 0.412 0.648 0.911 0.648 1.497 0 0.575-0.216 1.068-0.648 1.48-0.422 0.412-0.928 0.618-1.518 0.618z"></path>
 </symbol>
 
-  <symbol id="icon-arrow-narrow-left" viewBox="0 0 33 32">
+<symbol id="icon-arrow_up" viewBox="0 0 32 32">
+<path fill="none" stroke="#fafafa" stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color1, #fafafa)" d="M24 20l-8-8-8 8"></path>
+</symbol>
+
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M27.333 16h-21.333"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M14 24l-8-8 8-8"></path>
-</symbol>
+</symbol>v
 
 <symbol id="icon-arrow-narrow-right" viewBox="0 0 33 32">
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6 16h21.333"></path>
