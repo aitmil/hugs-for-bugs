@@ -21,8 +21,8 @@
 </symbol>
 
   <symbol id="icon-arrow-narrow-left" viewBox="0 0 33 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M27.333 16h-21.333"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M14 24l-8-8 8-8"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M27.333 16H6"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M14.333 24l-8-8 8-8"></path>
 </symbol>
 
 <symbol id="icon-arrow-narrow-right" viewBox="0 0 33 32">
