@@ -1,3 +1,8 @@
+.projects-swiper .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next::after {
+  content: '';
+}
+
 .project-section {
   padding: 0 16px;
   max-width: 375px;
@@ -68,11 +73,6 @@
   height: 896px;
 }
 
-.swiper-wrapper .project-lists-wrapper {
-  display: block;
-  margin-bottom: 32px;
-}
-
 .projects-slide {
   width: 343px;
   height: 812px;
@@ -97,6 +97,11 @@
 .svg-arrow {
   width: 25px;
   height: 25px;
+}
+
+.project-section-btn{
+  background-color: transparent;
+  border-radius: 60px;
 }
 
 .project-section-dark-part {
