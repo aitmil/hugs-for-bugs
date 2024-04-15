@@ -8,6 +8,11 @@
   gap: 8px;
 }
 
+.header-icon:hover {
+  /* background-color: #ddd; */
+  fill: black;
+}
+
 .header-navigation {
   display: flex;
   width: 172px;
@@ -53,6 +58,7 @@
   overflow-y: hidden;
 
   padding: 302px 152px 367px;
+
 
   background: linear-gradient(
     90deg,
