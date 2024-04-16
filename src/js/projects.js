@@ -11,9 +11,11 @@ const projectsSwiper = new Swiper('.projects-swiper', {
   mousewheel: {
     invert: true,
   },
+  slidesPerView: 1,
   watchOverflow: true,
   navigation: {
-    nextEl: '.project-btn-next',
-    prevEl: '.project-btn-prev',
+    nextEl: '.swiper-button-next-projects',
+    prevEl: '.swiper-button-prev-projects',
+    disabledClass: 'swiper-button-projects-disabled',
   },
 });
