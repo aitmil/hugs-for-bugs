@@ -4,7 +4,7 @@
 }
 
 .project-section {
-  padding: 0 16px;
+  /* padding: 0 16px; */
   max-width: 375px;
   padding-left: 16px;
   padding-right: 16px;
@@ -54,7 +54,6 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  /* color: var(--background); */
 }
 
 .project-section-title {
@@ -68,7 +67,6 @@
 
 .see-project-ref {
   max-width: fit-content;
-
   padding: 13px 32px;
   background-color: var(--button-color);
   border-color: transparent;
@@ -97,16 +95,21 @@
   align-items: center;
 }
 
-/* ///////Стилі на кнопку/////////// */
+/* ///////Arrow button styles/////////// */
+.project-section-svg {
+  width: 25px;
+  height: 24px;
+  margin: auto;
+}
 
 .project-section-btn {
-  border-radius: 50%;
   width: 52px;
+  height: 52px;
+  border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.5);
   background-color: transparent;
-  height: 52px;
 }
-/* ////////Buttons positioning/////////// */
+/* ////////Arrow buttons positioning/////////// */
 
 .arrows-container {
   display: flex;
@@ -114,26 +117,21 @@
   gap: 12px;
 }
 
-svg{
+.project-section-svg {
   stroke: var(--primary-light-color);
-  stroke: var(--border-color);
 }
 
 /* ////////Disable button styles///////// */
 
 .swiper-button-projects-disabled {
   border-color: var(--border-color);
+}
+
+.swiper-button-projects-disabled > .project-section-svg {
   stroke: var(--border-color);
 }
 
 /* /* //////////////////////////// */
-
-.arrows-container > .project-section-btn:hover > svg{
-stroke: red;
-}
-.arrows-container > .project-section-btn:focus {
-  /* background-color: aqua; */
-}
 
 .project-section-dark-part {
   padding: 100px 16px;
@@ -175,10 +173,18 @@ stroke: red;
   .arrows-container {
     gap: 20px;
   }
-
-  .project-section-btn {
-    width: 68px;
-  }
+    .project-section-svg {
+      width: 32px;
+      height: 32px;
+    }
+  
+    .project-section-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 1px solid rgba(250, 250, 250, 0.5);
+      background-color: transparent;
+    }
 }
 
 @media screen and (min-width: 1440px) {
