@@ -47,10 +47,12 @@
     border: 1px solid rgba(255, 255, 255, 20%);
     border-radius: 40px;
     box-sizing: border-box;
+    background-color: transparent;
+    transition: background-color 250ms;    
 }
 
 .benefits-button-container:hover {
-    background-color: rgba(237, 59, 68);
+    background-color: rgba(237, 59, 68);    
 }
 
 .benefits-link {
