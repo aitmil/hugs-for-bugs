@@ -278,6 +278,10 @@
     height: 20px;
   }
 
+  .about-me__panel {
+    margin-left: 696px;
+  }
+
   .about-me__button {
     width: 40px;
     height: 40px;
