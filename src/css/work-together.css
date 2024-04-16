@@ -2,7 +2,6 @@
   display: flex;
   margin-bottom: 111px;
   gap: 8px;
-  min-width: 320px;
 }
 .work-together-picture {
   width: 44px;
@@ -16,10 +15,10 @@
 .work-together-title {
   position: relative;
   font-size: 40px;
-  font-weight: 500;
   line-height: 40px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.03em;
 }
 .work-together-span {
   color: var(--button-color);
@@ -35,17 +34,10 @@
   flex-wrap: wrap;
 }
 
-.work-together-form-input-section {
-  padding-right: 43px;
-}
 .work-together-form-input {
+  width: 100%;
   margin-bottom: 16px;
-  min-width: 320px;
-  max-width: 343px; 
   padding-bottom: 20px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
   color: var(--primary-light-color);
   background-color: transparent;
   border: none;
@@ -58,13 +50,9 @@
   transition: var(--transition);
 }
 .work-together-form-comment {
-  min-width: 320px;
-  max-width: 343px;
+  width: 100%;
   height: 44px;
   resize: none;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
   color: var(--primary-light-color);
   margin-bottom: 32px;
   background-color: var(--primary-dark-color);
@@ -95,24 +83,20 @@
 }
 
 .work-together-contacts {
-  display: flex;
   flex-direction: column;
 }
 .work-together-contacts-list {
   display: flex;
   justify-content: flex-start;
   gap: 4px;
-  padding-right: 43px;
 }
 .work-together-contacts-list-link {
+  width: 100%;
   font-style: normal;
-  display: flex;
 }
 .contacts-link {
   display: inline-block;
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
   border: 1px inset var(--border-color);
   border-radius: 60px;
   padding: 10px 12px;
@@ -192,7 +176,7 @@
   }
 
   .work-together-container {
-    padding-top: 80px;
+    padding-top: 85px;
     padding-bottom: 169px;
     margin: 0;
     max-width: 768px;
@@ -225,11 +209,9 @@
     padding-right: 0;
   }
   .work-together-form-input {
-    min-width: 245px;
     height: 44px;
   }
   .work-together-form-comment {
-    min-width: 245px;
     height: 44px;
   }
   .work-together-button {
@@ -238,7 +220,6 @@
   }
 
   .work-together-contacts-list {
-    max-width: 418px;
     height: 55px;
     gap: 8px;
   }
