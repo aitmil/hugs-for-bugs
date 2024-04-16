@@ -41,7 +41,7 @@ transform: translateY(-50%);
 }
 
 .about-me-arrow {
-fill:rgb(59, 59, 59);
+stroke: #fafafa33
 }
 
 
