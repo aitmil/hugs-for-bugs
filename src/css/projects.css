@@ -114,8 +114,23 @@ max-width: fit-content;
     height: 52px;
 
 }
-/* //////////////////////////// */
+/* ////////Buttons positioning/////////// */
 
+.arrows-container-projects{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+/* ////////Disable button styles///////// */
+.swiper-button-projects-disabled > .project-section-btn {
+border-color: var(--arrow-color);
+background-color: aqua;
+} 
+/* /* //////////////////////////// */
+
+.arrows-container-projects > .project-section-btn{
+  background-color: aqua;
+}
 
 .project-section-dark-part {
   padding: 100px 16px;
