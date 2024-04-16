@@ -6,11 +6,44 @@ import 'izitoast/dist/css/iziToast.min.css';
 function limitAndEllipsis(event) {
   const input = event.target;
   const maxLength = 50;
+
   if (input.value.length > maxLength) {
     input.value = input.value.substring(0, maxLength) + '...';
   }
 }
 
+function handleInput(event) {
+  const input = event.target;
+  const maxLength = 50;
+
+  if (input.value.length > maxLength) {
+    input.value = input.value.substring(0, maxLength) + '...';
+  } else {
+    input.dataset.prevValue = input.value;
+  }
+}
+
+function handleKeyDown(event) {
+  const input = event.target;
+  const maxLength = 50;
+
+  if ((event.keyCode === 8 || event.keyCode === 46) && input.value.endsWith('...')) {
+    input.value = input.value.slice(0, -3);
+  } else if (event.keyCode === 8 || event.keyCode === 46) {
+    const prevValue = input.dataset.prevValue || '';
+    input.value = prevValue.slice(0, -1);
+    input.dataset.prevValue = input.value;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const textarea = document.getElementById('client-comment');
+  textarea.addEventListener('input', limitAndEllipsis);
+  textarea.addEventListener('input', handleInput);
+  textarea.addEventListener('keydown', handleKeyDown);
+});
+
+//
 const emailInput = document.getElementById('client-email');
 const commentInput = document.getElementById('client-comment');
 

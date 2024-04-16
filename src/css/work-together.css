@@ -2,6 +2,7 @@
   display: flex;
   margin-bottom: 111px;
   gap: 8px;
+  min-width: 320px;
 }
 .work-together-picture {
   width: 44px;
@@ -26,7 +27,7 @@
 .work-together-second-span {
   position: absolute;
   left: -52px;
-  top: 80px;
+  top: 50px;
 }
 
 .work-together-form {
@@ -34,6 +35,9 @@
   flex-wrap: wrap;
 }
 
+.work-together-form-input-section {
+  padding-right: 43px;
+}
 .work-together-form-input {
   margin-bottom: 16px;
   min-width: 320px;
@@ -98,6 +102,7 @@
   display: flex;
   justify-content: flex-start;
   gap: 4px;
+  padding-right: 43px;
 }
 .work-together-contacts-list-link {
   font-style: normal;
@@ -109,7 +114,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   border: 1px inset var(--border-color);
-  border-radius: 17px;
+  border-radius: 60px;
   padding: 10px 12px;
   white-space: nowrap;
 }
@@ -143,7 +148,7 @@
   z-index: 40;
   transform: translate(-50%, -50%);
   padding: 64px 32px;
-  max-width: 343px;
+  min-width: 343px;
   max-height: 276px;
   overflow: hidden;
   opacity: 0;
@@ -206,6 +211,7 @@
   }
   .work-together-second-span {
     left: -91px;
+    top: 80px;
   }
 
   .work-together-form {
@@ -216,6 +222,7 @@
   .work-together-form-input-section {
     display: flex;
     gap: 32px;
+    padding-right: 0;
   }
   .work-together-form-input {
     min-width: 245px;
@@ -255,8 +262,12 @@
     padding-right: 64px;
     padding-left: 64px;
   }
+  .modal-title {
+    width: 364px;
+  }
   .modal-description {
     width: 364px;
+    text-align: center;
   }
 }
 
