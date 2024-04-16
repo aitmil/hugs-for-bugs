@@ -82,9 +82,6 @@
 }
 
 @media (min-width: 768px) {
-    .faq-section {
-        max-width: 704px;
-    }
 
     .faq-title {
         margin: 0;
@@ -120,7 +117,6 @@
 @media (min-width: 1440px) {
 
     .faq-section {
-        max-width: 1376px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
