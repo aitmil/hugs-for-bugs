@@ -2,32 +2,24 @@
   padding-bottom: 118px;
 }
 
-.reviews-carusel {
-  display: flex;
-  gap: 16px;
-}
-
 .reviews-title {
-  padding-bottom: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.4);
+  color: var(--headers-text-color);
+  margin-bottom: 32px;
 }
 
 .user-review-container {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
-  width: auto;
+  /* width: auto; */
   height: 302px;
   padding: 32px 24px;
-}
-
-.user-review-container {
-  padding: 32px 24px;
+    overflow: scroll;
+    /* text-overflow: ellipsis; */
+  
 }
 
 .reviews-item-img {
@@ -48,13 +40,10 @@
   margin-bottom: 32px;
 }
 
-.review-user-name {
-  margin-bottom: 8px;
-}
-
 .review-user-comment {
   margin: 0;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
+  overflow: hidden;
 }
 
 .reviews-container {
@@ -79,13 +68,11 @@
 }
 
 .reviews-swiper-btn {
-  border-radius: 50%;
   width: 52px;
-  border: 1px solid;
-  border-color: rgb(250, 250, 250, 0.5);
-  background-color: transparent;
   height: 52px;
-  bottom: -60px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  background-color: transparent;
 }
 
 .reviews-btn-container svg {
@@ -109,14 +96,28 @@
   width: 32px;
 }
 
+/* ===================================== */
+
+.swiper-button-reviews-disabled > .reviews-swiper-btn {
+  border-color: var(--border-color);
+}
+
+.swiper-button-reviews-disabled
+  > .reviews-swiper-btn
+  > .review-section-arrow-right-svg {
+  stroke: var(--border-color);
+}
+
+.swiper-button-reviews-disabled
+  > .reviews-swiper-btn
+  > .review-section-arrow-left-svg {
+  stroke: var(--border-color);
+}
+
 /* /=========================== */
 @media (min-width: 375px) {
   .user-review-container {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 20px;
-    width: 332px;
-    height: 302px;
-    padding: 32px 24px;
+     width: 332px;
   }
 }
 
@@ -133,6 +134,15 @@
   .reviews-swiper-btn {
     height: 68px;
     width: 68px;
+  }
+
+  .review-section-arrow-right-svg {
+    width: 32px;
+    height: 32px;
+  }
+  .review-section-arrow-left-svg {
+    width: 32px;
+    height: 32px;
   }
 }
 
