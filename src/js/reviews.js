@@ -48,7 +48,7 @@ function renderReviews(reviews) {
   reviewsEl.insertAdjacentHTML('beforeend', markup);
 }
 
-const reviewsSwiper = new Swiper('.swiper-container', {
+const reviewsSwiper = new Swiper('.reviews-swiper-container', {
   modules: [Navigation],
   keyboard: {
     enabled: true,
@@ -74,6 +74,7 @@ const reviewsSwiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.reviews-btn-next',
     prevEl: '.reviews-btn-prev',
+    disabledClass: 'swiper-button-reviews-disabled',
   },
 });
 
