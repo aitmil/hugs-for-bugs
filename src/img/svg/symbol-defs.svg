@@ -30,6 +30,12 @@
 <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M19.333 8l8 8-8 8"></path>
 </symbol>
 
+<symbol id="icon-arrow-narrow-right-grey" viewBox="0 0 33 32">
+    <path fill="none" stroke="#3B3B3B" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6 16h21.333"></path>
+    <path fill="none" stroke="#3B3B3B" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M19.333 8l8 8-8 8"></path>
+</symbol>
+
+
 <symbol id="icon-ellipse-2" viewBox="0 0 32 32">
 <path fill="#ed3b44" opacity="0.6" style="fill: var(--color2, #ed3b44)" d="M24.069 16c0 4.456-3.613 8.069-8.069 8.069s-8.069-3.613-8.069-8.069c0-4.456 3.613-8.069 8.069-8.069s8.069 3.613 8.069 8.069z"></path>
 
