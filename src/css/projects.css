@@ -4,10 +4,7 @@
 }
 
 .project-section {
-  padding: 0 16px;
   max-width: 375px;
-  padding-left: 16px;
-  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -26,24 +23,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
   background-color: var(--primary-light-color);
   padding: 32px;
   border-radius: 24px 24px 0 0;
 }
-.light-part-wrap{
+
+.light-part-wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-    gap: 45px;
+  gap: 32px;
 }
 
 .project-section-skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 96px;
+  margin-bottom: 164px;
   color: var(--primary-dark-color);
 }
 
@@ -55,7 +51,6 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  /* color: var(--background); */
 }
 
 .project-section-title {
@@ -68,8 +63,7 @@
 }
 
 .see-project-ref {
-max-width: fit-content;
-
+  max-width: fit-content;
   padding: 13px 32px;
   background-color: var(--button-color);
   border-color: transparent;
@@ -82,40 +76,45 @@ max-width: fit-content;
   background-color: var(--accent-color);
 }
 
-.project-section-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
+/* ///////Arrow button styles/////////// */
+.project-section-svg {
+  width: 25px;
+  height: 24px;
+  margin: auto;
 }
 
-.swiper-btn {
-  border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
+.project-section-btn {
   width: 52px;
   height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  background-color: transparent;
+}
+
+/* ////////Arrow buttons positioning/////////// */
+
+.arrows-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
 }
 
-.svg-arrow {
-  width: 25px;
-  height: 25px;
+.project-section-svg {
+  stroke: var(--primary-light-color);
 }
 
-/* ///////Стилі на кнопку/////////// */
+/* ////////Disable button styles///////// */
 
-.project-section-btn{
-  border-radius: 50%;
-    width: 52px;
-    border: 1px solid;
-    border-color: rgb(250, 250, 250, 0.5);
-    background-color: transparent;
-    height: 52px;
-
+.swiper-button-projects-disabled {
+  border-color: var(--border-color);
 }
-/* //////////////////////////// */
 
+.swiper-button-projects-disabled>.project-section-svg {
+  stroke: var(--border-color);
+}
+
+/* /* //////////////////////////// */
 
 .project-section-dark-part {
   padding: 100px 16px;
@@ -124,7 +123,6 @@ max-width: fit-content;
   margin-bottom: 32px;
 }
 
-
 .project-section-img {
   min-width: 100%;
 }
@@ -132,13 +130,15 @@ max-width: fit-content;
 @media screen and (min-width: 768px) {
   .project-section {
     min-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
     margin: 0 auto;
   }
+
   .project-section-light-part {
     padding: 64px;
-    border-radius: 24px 24px 0 0;
+  }
+
+  .project-section-skills-list {
+    margin-bottom: 164px;
   }
 
   .project-section-title {
@@ -146,13 +146,28 @@ max-width: fit-content;
     font-size: 44px;
     line-height: 100%;
   }
-    .light-part-wrap {
-      gap: 32px;
-    }
+
+  .light-part-wrap {
+    gap: 32px;
+  }
 
   .project-section-dark-part {
     padding: 120px 45px;
     margin-bottom: 64px;
+  }
+
+  .arrows-container {
+    gap: 20px;
+  }
+
+  .project-section-svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .project-section-btn {
+    width: 68px;
+    height: 68px;
   }
 }
 
@@ -160,6 +175,10 @@ max-width: fit-content;
   .project-section {
     min-width: 1440px;
     margin: 0 auto;
+  }
+
+  .project-section-skills-list {
+    margin-bottom: 223px;
   }
 
   .projects-swiper-slide {
@@ -174,16 +193,17 @@ max-width: fit-content;
     font-size: 44px;
     line-height: 100%;
   }
+
   .project-section-light-part {
     padding: 64px;
     border-radius: 24px 0 0 24px;
     min-width: 50%;
   }
+
   .project-section-dark-part {
     padding: 120px 45px;
     margin-bottom: 0;
     border-radius: 0 24px 24px 0;
     min-width: 50%;
-
   }
 }

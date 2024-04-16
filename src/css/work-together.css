@@ -223,7 +223,7 @@
     height: 55px;
     gap: 8px;
   }
-  .work-together-contacts-list{
+  .work-together-contacts-list {
     align-items: baseline;
   }
   .contacts-link {
@@ -232,7 +232,6 @@
     border-radius: 60px;
   }
 }
-
 
 /* MODAL */
 

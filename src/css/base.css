@@ -23,8 +23,14 @@
   --success-text-color: #3cbc81;
   --background: rgba(28, 29, 32, 0.2);
 
+
+
   /* ======= transition ===== */
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,7 +55,6 @@ body {
 .section {
   padding-top: 32px;
   padding-bottom: 32px;
-  min-width: 320px;
 }
 
 .title {
@@ -91,7 +96,18 @@ body {
   background: var(--accent-color);
 }
 
-a:focus {
+a:focus,
+input:focus,
+textarea:focus,
+a:active,
+input:active,
+textarea:active {
+  outline: none;
+}
+
+a,
+input,
+textarea {
   outline: none;
 }
 

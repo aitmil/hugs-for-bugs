@@ -4,12 +4,14 @@
     flex-direction: column;
 }
 
+.faq-container {
+    
+}
+
 .faq-title {
     padding-bottom: 32px;
     border-bottom: 1px solid;
     border-color: #FAFAFA33;
-    margin-left: 16px;
-    margin-right: 16px;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
@@ -17,22 +19,24 @@
     color: #FAFAFA66;
 }
 
-.faq-column {
-    margin: 0 16px;
-}
 
 .faq-sector {
     padding: 20px 0;
     border-bottom: 1px solid;
     border-color: #FAFAFA33;
     display: flex;
-    flex-direction:column;
-    gap: 16px;
-    position: relative;
+    flex-direction: column;
+    gap:16px;
+    
+}
+
+.faq-sector-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .faq-sector-title {
-    max-width: 241px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
@@ -41,9 +45,7 @@
 }
 
 .faq-accordion {
-    position: absolute;
-    top: 20px;
-    right: 0;
+    position: relative;
     width: 34px;
     height: 34px;
     padding: 7px;
@@ -52,6 +54,7 @@
     border-radius: 50%;
     background-color: transparent;
     color: #FAFAFA;
+    flex-shrink: 0;
 }
 
 .faq-arrow {
@@ -82,9 +85,6 @@
 }
 
 @media (min-width: 768px) {
-    .faq-section {
-        max-width: 704px;
-    }
 
     .faq-title {
         margin: 0;
@@ -110,12 +110,16 @@
         max-width: 656px;
         padding-right: 32px;
     }
+
+    .faq-accordion {
+        width: 40px;
+    height: 40px;
+    }
 }
 
 @media (min-width: 1440px) {
 
     .faq-section {
-        max-width: 1376px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -130,11 +134,11 @@
         width: 50%;
     }
 
-    .faq-sector:nth-child(1) { order: 1; border-right: 1px solid #FAFAFA33; padding-right: 32px;}
+    .faq-sector:nth-child(1) { order: 1; border-right: 1px solid #FAFAFA33;}
     .faq-sector:nth-child(4) { order: 2; padding-left: 32px;}
-    .faq-sector:nth-child(2) { order: 3; border-right: 1px solid #FAFAFA33; padding-right: 32px; }
+    .faq-sector:nth-child(2) { order: 3; border-right: 1px solid #FAFAFA33;}
     .faq-sector:nth-child(5) { order: 4; padding-left: 32px;}
-    .faq-sector:nth-child(3) { order: 5; border-right: 1px solid #FAFAFA33; padding-right: 32px;}
+    .faq-sector:nth-child(3) { order: 5; border-right: 1px solid #FAFAFA33;}
     .faq-sector:nth-child(6) { order: 6; padding-left: 32px;}
 
     .faq-sector:nth-child(1) .faq-accordion {
