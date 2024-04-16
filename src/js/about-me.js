@@ -36,7 +36,7 @@ document.querySelectorAll('.about-me__button').forEach(button => {
 
 //=========================================================================
 
-const mySwiper = new Swiper('.swiper', {
+const mySwiper = new Swiper('.swiper-skills-list-container', {
   modules: [Navigation],
   spaceBetween: 0,
   loop: true,
@@ -49,6 +49,10 @@ const mySwiper = new Swiper('.swiper', {
   },
   breakpoints: {
     320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    375: {
       slidesPerView: 2,
       spaceBetween: 0,
     },
