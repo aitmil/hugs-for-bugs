@@ -4,7 +4,7 @@
 }
 
 .project-section {
-  /* padding: 0 16px; */
+  padding: 0 16px;
   max-width: 375px;
   padding-left: 16px;
   padding-right: 16px;
@@ -114,15 +114,23 @@
   gap: 12px;
 }
 
+svg{
+  stroke: var(--primary-light-color);
+  stroke: var(--border-color);
+}
+
 /* ////////Disable button styles///////// */
 
 .swiper-button-projects-disabled {
   border-color: var(--border-color);
+  stroke: var(--border-color);
 }
 
 /* /* //////////////////////////// */
 
-.arrows-container > .project-section-btn:hover,
+.arrows-container > .project-section-btn:hover > svg{
+stroke: red;
+}
 .arrows-container > .project-section-btn:focus {
   /* background-color: aqua; */
 }
