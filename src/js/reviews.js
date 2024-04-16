@@ -74,6 +74,7 @@ const reviewsSwiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.reviews-btn-next',
     prevEl: '.reviews-btn-prev',
+    disabledClass: 'swiper-button-review-disabled',
   },
 });
 
