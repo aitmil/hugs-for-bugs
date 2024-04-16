@@ -4,9 +4,13 @@
   position: relative;
 }
 
+.swiper-section .swiper {
+  margin-left: 0;
+}
+
 .swiper-skills-list-container {
   overflow: hidden;
-  width: 260px;
+  width: 130px;
 }
 
 .swiper-skills-slide .swiper-slide-container {
@@ -26,34 +30,28 @@
   background-color: var(--accent-color);
 }
 
-button {
-  padding: 0;
-}
 .swiper-skill-list-next {
-height: 32px;
-width: 32px;
-padding: 0;
-position: absolute;
-background-color: transparent;
-right: 0;
-top: 50%;
-transform: translateY(-50%);
+  position: absolute;
+  background-color: transparent;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.about-me-arrow {
-stroke: #fafafa33
+.swiper-skill-list-button {
+  color: var(--arrow-color);
 }
-
+svg {
+  stroke: inherit;
+}
 
 .swiper-skill-list-next:hover .about-me-arrow {
   fill: var(--accent-color);
 }
 
-
 .swiper-skill-list-next:focus .about-me-arrow {
   fill: var(--accent-color);
 }
-
 
 .swiper-skill-list-button {
   background-color: #1c1d20;
@@ -61,11 +59,10 @@ stroke: #fafafa33
 }
 
 @media screen and (min-width: 375px) {
-  .swiper-section .swiper {
-    margin-left: 0;
+  .swiper-skills-list-container {
+    width: 260px;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .swiper-skills-list-container {
