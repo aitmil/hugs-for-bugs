@@ -2,8 +2,9 @@
   display: flex;
   margin-bottom: 111px;
   gap: 8px;
-  min-width: 320px;
+  min-width: 288px;
 }
+
 .work-together-picture {
   width: 44px;
   height: 44px;
@@ -19,7 +20,7 @@
   font-weight: 500;
   line-height: 40px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: -0.03em;
 }
 .work-together-span {
   color: var(--button-color);
@@ -35,9 +36,6 @@
   flex-wrap: wrap;
 }
 
-.work-together-form-input-section {
-  padding-right: 43px;
-}
 .work-together-form-input {
   margin-bottom: 16px;
   min-width: 288px;
@@ -100,6 +98,7 @@
 }
 .work-together-contacts-list {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   gap: 4px;
   padding-right: 43px;
@@ -124,6 +123,24 @@
   outline: none;
   border: 1px solid var(--primary-light-color);
   transition: var(--transition);
+}
+
+@media screen and (min-width: 375px){
+  .work-together-contacts-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768){
+  .work-together-contacts-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .work-together-contacts-list {
+    flex-direction: row;
+  }
 }
 
 /* MODAL */
