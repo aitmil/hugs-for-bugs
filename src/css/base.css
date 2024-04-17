@@ -23,8 +23,6 @@
   --success-text-color: #3cbc81;
   --background: rgba(28, 29, 32, 0.2);
 
-
-
   /* ======= transition ===== */
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -39,9 +37,9 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  /* width: 100%;
+  width: 100%;
   max-width: 100%;
-  overflow-x: hidden; */
+  overflow: hidden;
 }
 
 .container {
@@ -113,8 +111,8 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   .container {

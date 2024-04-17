@@ -1,12 +1,7 @@
 .hero {
   position: relative;
-  /* min-width: 320px; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 168px;
+  padding-top: 169px;
   padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 .hero-animation {
@@ -60,6 +55,12 @@
   border-radius: 60px;
   width: 35px;
   height: 35px;
+  transition: border var(--transition);
+}
+
+.hero-item:hover,
+.hero-item:focus {
+  border-color: var(--primary-light-color);
 }
 
 .hero-item-mail {
@@ -68,6 +69,12 @@
   padding: 10px 12px;
   width: 35px;
   height: 35px;
+  transition: border var(--transition);
+}
+
+.hero-item-mail:hover,
+.hero-item-mail:focus {
+  border-color: var(--primary-light-color);
 }
 
 .hero-social {
@@ -87,12 +94,14 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    /* min-width: 768px; */
+    padding-top: 188px;
   }
+
   .hero-title {
     width: 632px;
     font-size: 90px;
   }
+
   .hero-social {
     justify-content: flex-end;
     font-size: 16px;
@@ -100,16 +109,11 @@
   }
 
   .hero-list {
-  
     gap: 4px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero {
-    /* min-width: 1440px; */
-  }
-
   .hero-title {
     width: 1184px;
     font-size: 90px;
