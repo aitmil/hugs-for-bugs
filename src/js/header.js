@@ -2,58 +2,34 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileMenuOpenBtn = document.querySelector('.mobile-menu-open-btn');
   const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
 
-  mobileMenuOpenBtn.addEventListener('click', function () {
+  function openMenu() {
     mobileMenuWrapper.classList.add('is-open');
-  });
-
-  const dropdownLinks = document.querySelectorAll('.dropdown');
-
-  dropdownLinks.forEach(function (link) {
-    link.addEventListener('click', function (event) {
-      if (window.innerWidth > 768) {
-        const dropdownContent = link.nextElementSibling;
-        dropdownContent.classList.toggle('is-open');
-      }
-    });
-  });
-
-  const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
-
-  mobileMenuCloseBtn.addEventListener('click', function () {
-    mobileMenuWrapper.classList.remove('is-open');
-  });
-});
-
-// ---------------------------------------------------------------
-
-document.addEventListener('DOMContentLoaded', function () {
- 
-  const closeBtn = document.querySelector('.mobile-menu-close-btn');
- 
-  const menuItems = document.querySelectorAll('.mobile-menu-link');
-
- 
-  function closeMenu() {
-    const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
-    mobileMenuWrapper.style.display = 'none';
+    mobileMenuOpenBtn.removeEventListener('click', openMenu);
   }
 
- 
-  closeBtn.addEventListener('click', function () {
-    closeMenu();
-  });
+  function closeMenu() {
+    mobileMenuWrapper.classList.remove('is-open');
+    mobileMenuOpenBtn.addEventListener('click', openMenu);
+  }
 
- 
+  mobileMenuOpenBtn.addEventListener('click', openMenu);
+
+  const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
+  const menuItems = document.querySelectorAll('.mobile-menu-link');
+  const formSubmitButton = document.querySelector('.form-submit-button');
+  const orderProjectLink = document.querySelector('.header-link-mobile');
+
+  mobileMenuCloseBtn.addEventListener('click', closeMenu);
+
   menuItems.forEach(function (item) {
-    item.addEventListener('click', function () {
-      closeMenu();
-    });
+    item.addEventListener('click', closeMenu);
   });
+
+  formSubmitButton.addEventListener('click', closeMenu);
+
+  orderProjectLink.addEventListener('click', closeMenu);
 });
-
-
 // ---------------------------------------------------------------
-
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
