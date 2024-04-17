@@ -1,5 +1,6 @@
 .reviews-section {
-  padding-bottom: 118px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .reviews-title {
@@ -123,7 +124,9 @@
 @media (min-width: 768px) {
   .reviews-section {
     min-width: 704px;
-    padding-bottom: 32px;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .reviews-btn-container {
@@ -148,6 +151,9 @@
 @media (min-width: 1440px) {
   .reviews-section {
     min-width: 1376px;
+
+    padding-top: 164px;
+    padding-bottom: 164px;
   }
 
   .swiper-container .swiper-button-prev {
