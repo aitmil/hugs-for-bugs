@@ -21,19 +21,19 @@
 
 .header {
   position: relative;
+  padding-top: 32px;
 }
 
 .menu-item {
   display: none;
 }
- 
+
 .header-link {
   display: none;
 }
 
 .header-svg:hover,
 .header-svg:focus {
-
   color: #242527;
 }
 
@@ -145,10 +145,6 @@
 /* ----------- TABLET ----------- */
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding-top: 42px;
-  }
-
   .mobile-menu-open-btn {
     display: none;
   }
@@ -165,7 +161,6 @@
     display: flex;
   }
 
- 
   .order-link:hover {
     color: #3b3b3b;
   }
@@ -183,10 +178,9 @@
     background: none;
     border: none;
     outline: none;
-    color: #FAFAFA;
+    color: #fafafa;
   }
-  
-  
+
   .dropdown-content {
     opacity: 0;
     visibility: hidden;
@@ -203,7 +197,6 @@
     transition: opacity var(--transition), visibility var(--transition);
     text-decoration: none;
   }
-  
 
   .is-open {
     opacity: 1;
@@ -215,8 +208,6 @@
     color: inherit;
     transition: color var(--transition);
   }
-
-
 
   .dropdown:hover,
   .dropdown-content a:hover,
