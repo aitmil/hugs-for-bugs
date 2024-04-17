@@ -11,15 +11,20 @@
   margin-bottom: 32px;
 }
 
-.user-review-container {
+.review-user-comment {
+  display: block;
+}
+
+.user-review-outer-wrapper {
+  padding: 32px 24px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
-  /* width: auto; */
   height: 302px;
-  padding: 32px 24px;
-    overflow: scroll;
-    /* text-overflow: ellipsis; */
-  
+}
+
+.user-review-inner-wrapper {
+  height: 100%;
+  overflow: auto;
 }
 
 .reviews-item-img {
@@ -115,12 +120,6 @@
 }
 
 /* /=========================== */
-@media (min-width: 375px) {
-  .user-review-container {
-     width: 332px;
-  }
-}
-
 @media (min-width: 768px) {
   .reviews-section {
     min-width: 704px;
