@@ -37,9 +37,9 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  /* width: 100%;
+  width: 100%;
   max-width: 100%;
-  overflow-x: hidden; */
+  overflow: hidden;
 }
 
 .container {
