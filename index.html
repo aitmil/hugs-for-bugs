@@ -25,11 +25,11 @@
     <script type="module" crossorigin src="/hugs-for-bugs/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/hugs-for-bugs/assets/vendor-f778ff99.js">
     <link rel="stylesheet" href="/hugs-for-bugs/assets/vendor-a776dd97.css">
-    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-220b3872.css">
+    <link rel="stylesheet" href="/hugs-for-bugs/assets/index-632ca437.css">
   </head>
   <body>
     <!-- ======== Header ========= -->
-    <header class="header section">
+    <header class="header">
   <div class="hero-animation"></div>
   <div class="header-container container">
     <nav class="header-navigation">
@@ -46,22 +46,22 @@
       <!-- ----- DROPDOWN MENU ----- -->
 
       <div class="menu-item">
-  <button type="button" class="dropdown">Menu</button>
-  <ul class="dropdown-content">
-    <li class="dropdown-link">
-      <a href="#about-me">About me</a>
-    </li>
-    <li class="dropdown-link">
-      <a href="#benefits">Benefits</a>
-    </li>
-    <li class="dropdown-link">
-      <a href="#projects">Projects</a>
-    </li>
-    <li class="dropdown-link">
-      <a href="#faq">FAQ</a>
-    </li>
-  </ul>
-</div>
+        <button type="button" class="dropdown">Menu</button>
+        <ul class="dropdown-content">
+          <li class="dropdown-link">
+            <a href="#about-me">About me</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#benefits">Benefits</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="dropdown-link">
+            <a href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
 
       <!-- ------------------------- -->
     </nav>
@@ -96,18 +96,18 @@
       </button>
       <ul class="mobile-menu">
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link menu-studio" href="about-me"
-            >About me</a>
-          
+          <a class="mobile-menu-link link menu-studio" href="#about-me"
+            >About me</a
+          >
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="benefits">Benefits</a>
+          <a class="mobile-menu-link link" href="#benefits">Benefits</a>
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="">Projects</a>
+          <a class="mobile-menu-link link" href="#projects">Projects</a>
         </li>
         <li class="mobile-menu-item">
-          <a class="mobile-menu-link link" href="faq">FAQ</a>
+          <a class="mobile-menu-link link" href="#faq">FAQ</a>
         </li>
         <a class="header-link-mobile" href="#work-together"
           >Order the project</a
@@ -403,7 +403,7 @@
 </section>
 
       <!-- /* Projects */ -->
-      <section id="projects" class="project-section">
+      <section id="projects" class="project-section section">
   <div class="container">
     <h2 class="project-section-header title transparent title">Projects</h2>
     <!-- ======================================== -->
@@ -593,21 +593,26 @@
 </section>
 
       <!-- /* FAQ */ -->
-      <section id="faq" class="faq-section">
+      <section id="faq" class="faq-section section">
   <div class="container">
     <h2 class="faq-title">FAQ</h2>
     <ul class="faq-column">
       <li class="faq-sector">
         <div class="faq-sector-top">
-        <h3 class="faq-sector-title">
-          What programming languages ​​are most often used in your project?
-        </h3>
-        <button type="button" class="faq-accordion">
-          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-            <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
+          <h3 class="faq-sector-title">
+            What programming languages ​​are most often used in your project?
+          </h3>
+          <button type="button" class="faq-accordion">
+            <svg
+              class="faq-arrow"
+              width="20"
+              height="20"
+              aria-label="icon arrow"
+            >
+              <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
         <div class="faq-sector-description visually-hidden">
           In the field of web development, there are various technologies and
           programming languages. Typically, this includes a combination of
@@ -616,15 +621,20 @@
       </li>
       <li class="faq-sector">
         <div class="faq-sector-top">
-        <h3 class="faq-sector-title">
-          What are the deadlines for the project?
-        </h3>
-        <button type="button" class="faq-accordion">
-          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-            <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
+          <h3 class="faq-sector-title">
+            What are the deadlines for the project?
+          </h3>
+          <button type="button" class="faq-accordion">
+            <svg
+              class="faq-arrow"
+              width="20"
+              height="20"
+              aria-label="icon arrow"
+            >
+              <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
         <div class="faq-sector-description visually-hidden">
           The terms of project implementation depend to a large extent on a
           number of factors, such as the scope of the project, its complexity,
@@ -635,13 +645,18 @@
       </li>
       <li class="faq-sector">
         <div class="faq-sector-top">
-        <h3 class="faq-sector-title">What payment methods do you accept?</h3>
-        <button type="button" class="faq-accordion">
-          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-            <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
+          <h3 class="faq-sector-title">What payment methods do you accept?</h3>
+          <button type="button" class="faq-accordion">
+            <svg
+              class="faq-arrow"
+              width="20"
+              height="20"
+              aria-label="icon arrow"
+            >
+              <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
         <div class="faq-sector-description visually-hidden">
           Payment through credit and debit cards such as Visa, MasterCard,
           specialized electronic payment systems such as PayPal, as well as
@@ -650,13 +665,18 @@
       </li>
       <li class="faq-sector">
         <div class="faq-sector-top">
-        <h3 class="faq-sector-title">How can I contact you?</h3>
-        <button type="button" class="faq-accordion">
-          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-            <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
+          <h3 class="faq-sector-title">How can I contact you?</h3>
+          <button type="button" class="faq-accordion">
+            <svg
+              class="faq-arrow"
+              width="20"
+              height="20"
+              aria-label="icon arrow"
+            >
+              <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
         <div class="faq-sector-description visually-hidden">
           In the field of web development, there are various technologies and
           programming languages. Typically, this includes a combination of
@@ -665,13 +685,18 @@
       </li>
       <li class="faq-sector">
         <div class="faq-sector-top">
-        <h3 class="faq-sector-title">What payment methods do you accept?</h3>
-        <button type="button" class="faq-accordion">
-          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-            <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
+          <h3 class="faq-sector-title">What payment methods do you accept?</h3>
+          <button type="button" class="faq-accordion">
+            <svg
+              class="faq-arrow"
+              width="20"
+              height="20"
+              aria-label="icon arrow"
+            >
+              <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
         <div class="faq-sector-description visually-hidden">
           The terms of project implementation depend to a large extent on a
           number of factors, such as the scope of the project, its complexity,
@@ -682,16 +707,21 @@
       </li>
       <li class="faq-sector">
         <div class="faq-sector-top">
-        <h3 class="faq-sector-title">
-          What does the process of developing a software product look like from
-          idea to implementation?
-        </h3>
-        <button type="button" class="faq-accordion">
-          <svg class="faq-arrow" width="20" height="20" aria-label="icon arrow">
-            <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </div>
+          <h3 class="faq-sector-title">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </h3>
+          <button type="button" class="faq-accordion">
+            <svg
+              class="faq-arrow"
+              width="20"
+              height="20"
+              aria-label="icon arrow"
+            >
+              <use href="/hugs-for-bugs/assets/symbol-defs-cd3a8f22.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
         <div class="faq-sector-description visually-hidden">
           Payment through credit and debit cards such as Visa, MasterCard,
           specialized electronic payment systems such as PayPal, as well as
@@ -703,113 +733,260 @@
 </section>
 
       <!-- /* Covers */ -->
-      
-<section id="covers" class="section covers-section">
-    <h2 class="visually-hidden">Сovers</h2>
-    <div class="rolling-images" id="rollingImages">
+      <section id="covers" class="covers-section">
+  <h2 class="visually-hidden">Сovers</h2>
+  <div class="rolling-images" id="rollingImages">
     <ul class="covers-list first-ul">
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg" srcset="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg 1x, /hugs-for-bugs/assets/Picture-1-2x-16725e1a.jpeg 2x"  alt="Image 1">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg" srcset="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg 1x, /hugs-for-bugs/assets/Picture-2-2x-ae8237fa.jpeg 2x"  alt="Image 2">
-        </li>
-        <li>
-            <img  class="cover-image" src="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg" srcset="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg 1x, /hugs-for-bugs/assets/Picture-3-2x-b99ba4f2.jpeg 2x"  alt="Image 3">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg" srcset="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg 1x, /hugs-for-bugs/assets/Picture-4-2x-28021956.jpeg 2x"  alt="Image 4">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg" srcset="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg 1x, /hugs-for-bugs/assets/Picture-5-2x-d0777136.jpeg 2x"  alt="Image 5">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg" srcset="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg 1x, /hugs-for-bugs/assets/Picture-6-2x-192fe1db.jpeg 2x"  alt="Image 6">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg" srcset="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg 1x, /hugs-for-bugs/assets/Picture-7-2x-dd3e84ca.jpeg 2x"  alt="Image 7">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg" srcset="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg 1x, /hugs-for-bugs/assets/Picture-8-2x-5b5a1539.jpeg 2x"  alt="Image 8">
-        </li>
-        <li>
-            <img  class="cover-image" src="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg" srcset="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg 1x, /hugs-for-bugs/assets/Picture-9-2x-f3a69476.jpeg 2x"  alt="Image 9">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg" srcset="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg 1x, /hugs-for-bugs/assets/Picture-10-2x-6e1eb5b5.jpeg 2x"  alt="Image 10">
-        </li>
-        
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg 1x, /hugs-for-bugs/assets/Picture-1-2x-16725e1a.jpeg 2x"
+          alt="Image 1"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg 1x, /hugs-for-bugs/assets/Picture-2-2x-ae8237fa.jpeg 2x"
+          alt="Image 2"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg 1x, /hugs-for-bugs/assets/Picture-3-2x-b99ba4f2.jpeg 2x"
+          alt="Image 3"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg 1x, /hugs-for-bugs/assets/Picture-4-2x-28021956.jpeg 2x"
+          alt="Image 4"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg 1x, /hugs-for-bugs/assets/Picture-5-2x-d0777136.jpeg 2x"
+          alt="Image 5"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg 1x, /hugs-for-bugs/assets/Picture-6-2x-192fe1db.jpeg 2x"
+          alt="Image 6"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg 1x, /hugs-for-bugs/assets/Picture-7-2x-dd3e84ca.jpeg 2x"
+          alt="Image 7"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg 1x, /hugs-for-bugs/assets/Picture-8-2x-5b5a1539.jpeg 2x"
+          alt="Image 8"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg 1x, /hugs-for-bugs/assets/Picture-9-2x-f3a69476.jpeg 2x"
+          alt="Image 9"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg 1x, /hugs-for-bugs/assets/Picture-10-2x-6e1eb5b5.jpeg 2x"
+          alt="Image 10"
+        />
+      </li>
     </ul>
-    <ul  class="covers-list second-ul"><li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg" srcset="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg 1x, /hugs-for-bugs/assets/Picture-1-2x-16725e1a.jpeg 2x" alt="Image 1">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg" srcset="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg 1x, /hugs-for-bugs/assets/Picture-2-2x-ae8237fa.jpeg 2x" alt="Image 2">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg" srcset="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg 1x, /hugs-for-bugs/assets/Picture-3-2x-b99ba4f2.jpeg 2x" alt="Image 3">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg" srcset="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg 1x, /hugs-for-bugs/assets/Picture-4-2x-28021956.jpeg 2x" alt="Image 4">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg" srcset="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg 1x, /hugs-for-bugs/assets/Picture-5-2x-d0777136.jpeg 2x" alt="Image 5">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg" srcset="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg 1x, /hugs-for-bugs/assets/Picture-6-2x-192fe1db.jpeg 2x" alt="Image 6">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg" srcset="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg 1x, /hugs-for-bugs/assets/Picture-7-2x-dd3e84ca.jpeg 2x" alt="Image 7">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg" srcset="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg 1x, /hugs-for-bugs/assets/Picture-8-2x-5b5a1539.jpeg 2x" alt="Image 8">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg" srcset="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg 1x, /hugs-for-bugs/assets/Picture-9-2x-f3a69476.jpeg 2x" alt="Image 9">
-    </li>
-    <li>
-        <img class="cover-image" src="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg" srcset="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg 1x, /hugs-for-bugs/assets/Picture-10-2x-6e1eb5b5.jpeg 2x" alt="Image 10">
-    </li></ul>
+    <ul class="covers-list second-ul">
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg 1x, /hugs-for-bugs/assets/Picture-1-2x-16725e1a.jpeg 2x"
+          alt="Image 1"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg 1x, /hugs-for-bugs/assets/Picture-2-2x-ae8237fa.jpeg 2x"
+          alt="Image 2"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg 1x, /hugs-for-bugs/assets/Picture-3-2x-b99ba4f2.jpeg 2x"
+          alt="Image 3"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg 1x, /hugs-for-bugs/assets/Picture-4-2x-28021956.jpeg 2x"
+          alt="Image 4"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg 1x, /hugs-for-bugs/assets/Picture-5-2x-d0777136.jpeg 2x"
+          alt="Image 5"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg 1x, /hugs-for-bugs/assets/Picture-6-2x-192fe1db.jpeg 2x"
+          alt="Image 6"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg 1x, /hugs-for-bugs/assets/Picture-7-2x-dd3e84ca.jpeg 2x"
+          alt="Image 7"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg 1x, /hugs-for-bugs/assets/Picture-8-2x-5b5a1539.jpeg 2x"
+          alt="Image 8"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg 1x, /hugs-for-bugs/assets/Picture-9-2x-f3a69476.jpeg 2x"
+          alt="Image 9"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg 1x, /hugs-for-bugs/assets/Picture-10-2x-6e1eb5b5.jpeg 2x"
+          alt="Image 10"
+        />
+      </li>
+    </ul>
     <ul class="covers-list third-ul">
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg" srcset="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg 1x, /hugs-for-bugs/assets/Picture-1-2x-16725e1a.jpeg 2x" alt="Image 1">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg" srcset="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg 1x, /hugs-for-bugs/assets/Picture-2-2x-ae8237fa.jpeg 2x" alt="Image 2">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg" srcset="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg 1x, /hugs-for-bugs/assets/Picture-3-2x-b99ba4f2.jpeg 2x" alt="Image 3">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg" srcset="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg 1x, /hugs-for-bugs/assets/Picture-4-2x-28021956.jpeg 2x" alt="Image 4">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg" srcset="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg 1x, /hugs-for-bugs/assets/Picture-5-2x-d0777136.jpeg 2x" alt="Image 5">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg" srcset="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg 1x, /hugs-for-bugs/assets/Picture-6-2x-192fe1db.jpeg 2x" alt="Image 6">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg" srcset="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg 1x, /hugs-for-bugs/assets/Picture-7-2x-dd3e84ca.jpeg 2x" alt="Image 7">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg" srcset="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg 1x, /hugs-for-bugs/assets/Picture-8-2x-5b5a1539.jpeg 2x" alt="Image 8">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg" srcset="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg 1x, /hugs-for-bugs/assets/Picture-9-2x-f3a69476.jpeg 2x" alt="Image 9">
-        </li>
-        <li>
-            <img class="cover-image" src="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg" srcset="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg 1x, /hugs-for-bugs/assets/Picture-10-2x-6e1eb5b5.jpeg 2x" alt="Image 10">
-        </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-1-1x-a8ef2530.jpeg 1x, /hugs-for-bugs/assets/Picture-1-2x-16725e1a.jpeg 2x"
+          alt="Image 1"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-2-1x-11116501.jpeg 1x, /hugs-for-bugs/assets/Picture-2-2x-ae8237fa.jpeg 2x"
+          alt="Image 2"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-3-1x-d80ae6f8.jpeg 1x, /hugs-for-bugs/assets/Picture-3-2x-b99ba4f2.jpeg 2x"
+          alt="Image 3"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-4-1x-f48ff046.jpeg 1x, /hugs-for-bugs/assets/Picture-4-2x-28021956.jpeg 2x"
+          alt="Image 4"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-5-1x-f6f7e0ae.jpeg 1x, /hugs-for-bugs/assets/Picture-5-2x-d0777136.jpeg 2x"
+          alt="Image 5"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-6-1x-2460cb1c.jpeg 1x, /hugs-for-bugs/assets/Picture-6-2x-192fe1db.jpeg 2x"
+          alt="Image 6"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-7-1x-cf307937.jpeg 1x, /hugs-for-bugs/assets/Picture-7-2x-dd3e84ca.jpeg 2x"
+          alt="Image 7"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-8-1x-8de33475.jpeg 1x, /hugs-for-bugs/assets/Picture-8-2x-5b5a1539.jpeg 2x"
+          alt="Image 8"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-9-1x-e623f66d.jpeg 1x, /hugs-for-bugs/assets/Picture-9-2x-f3a69476.jpeg 2x"
+          alt="Image 9"
+        />
+      </li>
+      <li>
+        <img
+          class="cover-image"
+          src="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg"
+          srcset="/hugs-for-bugs/assets/Picture-10-1x-1cad773e.jpeg 1x, /hugs-for-bugs/assets/Picture-10-2x-6e1eb5b5.jpeg 2x"
+          alt="Image 10"
+        />
+      </li>
     </ul>
-    </div>
-    
-    
+  </div>
 </section>
-    
 
       <!-- /* Reviews */ -->
-      <section class="reviews-section section container" id="reviews">
+      <section class="reviews-section container" id="reviews">
   <h2 class="reviews-title title">Reviews</h2>
   <div class="reviews-container">
     <div class="reviews-swiper-container swiper">
