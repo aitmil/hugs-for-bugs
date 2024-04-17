@@ -255,7 +255,7 @@
 @media screen and (min-width: 1440px) {
   .about-me__section {
     max-width: 1440px;
-    padding: 96px 48px;
+    padding: 96px 32px;
     gap: 96px;
   }
 
@@ -281,5 +281,9 @@
   .about-me__button {
     width: 40px;
     height: 40px;
+  }
+
+  .about-me__panel {
+    margin-left: 696px;
   }
 }
