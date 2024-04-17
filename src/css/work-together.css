@@ -1,3 +1,4 @@
+/* TITLE */
 .work-together-logo-title {
   display: flex;
   margin-bottom: 111px;
@@ -29,9 +30,11 @@
   top: 50px;
 }
 
+/* FORM */
 .work-together-form {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 64px;
 }
 
 .work-together-form-input {
@@ -66,7 +69,6 @@
   transition: var(--transition);
 }
 .work-together-button {
-  margin-bottom: 64px;
   width: 100px;
   height: 100px;
   background-color: var(--button-color);
@@ -82,18 +84,16 @@
   border: 1px solid var(--accent-color);
 }
 
-.work-together-contacts {
-  flex-direction: column;
-}
+/* CONTACTS */
 .work-together-contacts-list {
   display: flex;
   justify-content: flex-start;
   gap: 4px;
 }
 .work-together-contacts-list-link {
-  width: 100%;
   font-style: normal;
 }
+
 .contacts-link {
   display: inline-block;
   font-size: 14px;
@@ -179,7 +179,6 @@
     padding-top: 85px;
     padding-bottom: 169px;
     margin: 0;
-    max-width: 768px;
   }
 
   .work-together-logo-title {
@@ -220,7 +219,6 @@
   }
 
   .work-together-contacts-list {
-    height: 55px;
     gap: 8px;
   }
   .work-together-contacts-list {
@@ -253,8 +251,6 @@
 
 @media screen and (min-width: 1440px) {
   .work-together-container {
-    margin: 0;
-    max-width: 1440px;
     padding-left: 196px;
     padding-right: 196px;
   }
