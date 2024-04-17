@@ -2,44 +2,46 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileMenuOpenBtn = document.querySelector('.mobile-menu-open-btn');
   const mobileMenuWrapper = document.querySelector('.mobile-menu-wrapper');
 
-  mobileMenuOpenBtn.addEventListener('click', function () {
+  function openMenu() {
     mobileMenuWrapper.classList.add('is-open');
-  });
+    mobileMenuOpenBtn.removeEventListener('click', openMenu);
+  }
 
-  const dropdownLinks = document.querySelectorAll('.dropdown');
+  function closeMenu() {
+    mobileMenuWrapper.classList.remove('is-open');
+    mobileMenuOpenBtn.addEventListener('click', openMenu);
+  }
 
-  dropdownLinks.forEach(function (link) {
-    const dropdownContent = link.nextElementSibling;
-    const dropdownLinksContainer = link.parentElement.parentElement;
-    
-    
-    dropdownContent.classList.remove('is-open');
-    dropdownLinksContainer.classList.remove('is-open');
-    
-    link.addEventListener('click', function (event) {
-      dropdownContent.classList.toggle('is-open'); 
-      dropdownLinksContainer.classList.toggle('is-open'); 
-    });
-  });
+  mobileMenuOpenBtn.addEventListener('click', openMenu);
 
   const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
+  const menuItems = document.querySelectorAll('.mobile-menu-link');
+  const formSubmitButton = document.querySelector('.form-submit-button');
+  const orderProjectLink = document.querySelector('.header-link-mobile');
 
-  mobileMenuCloseBtn.addEventListener('click', function () {
-    mobileMenuWrapper.classList.remove('is-open');
+  mobileMenuCloseBtn.addEventListener('click', closeMenu);
+
+  menuItems.forEach(function (item) {
+    item.addEventListener('click', closeMenu);
   });
 
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+  formSubmitButton.addEventListener('click', closeMenu);
 
-      const target = document.querySelector(this.getAttribute('href'));
+  orderProjectLink.addEventListener('click', closeMenu);
+});
+// ---------------------------------------------------------------
 
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop,
-          behavior: 'smooth',
-        });
-      }
-    });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth',
+      });
+    }
   });
 });
