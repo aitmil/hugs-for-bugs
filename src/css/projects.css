@@ -69,6 +69,7 @@
   border-color: transparent;
   border-radius: 50px;
   color: var(--primary-light-color);
+  transition: background-color var(--transition);
 }
 
 .see-project-ref:hover,
@@ -86,13 +87,13 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  border: 1px solid var(--arrow-color);
+  border: 1px solid var(--arrow-add-color);
   background-color: transparent;
 }
 
 .project-section-btn:hover,
 .project-section-btn:focus {
-  border-color:var(--primary-light-color);
+  border-color: var(--primary-light-color);
 }
 
 .arrows-container {
@@ -108,15 +109,15 @@
 
 .swiper-button-projects-disabled {
   border-color: var(--border-color);
+  transition: border-color var(--transition);
 }
 
 .swiper-button-projects-disabled:hover,
-.swiper-button-projects-disabled:focus{
+.swiper-button-projects-disabled:focus {
   border-color: var(--border-color);
 }
 
-
-.swiper-button-projects-disabled>.project-section-svg {
+.swiper-button-projects-disabled > .project-section-svg {
   stroke: var(--border-color);
 }
 

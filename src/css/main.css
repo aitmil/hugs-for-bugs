@@ -1,6 +1,8 @@
+@import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./utility.css');
+@import url('./fonts.css');
 
 /* <!-- Header --> */
 @import url('./header.css');
