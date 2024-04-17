@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const mobileMenuCloseBtn = document.querySelector('.mobile-menu-close-btn');
   const menuItems = document.querySelectorAll('.mobile-menu-link');
-  const formSubmitButton = document.querySelector('.form-submit-button');
   const orderProjectLink = document.querySelector('.header-link-mobile');
 
   mobileMenuCloseBtn.addEventListener('click', closeMenu);
@@ -25,10 +24,26 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', closeMenu);
   });
 
-  formSubmitButton.addEventListener('click', closeMenu);
-
   orderProjectLink.addEventListener('click', closeMenu);
 });
+
+// ---------------------------------------------------------------
+
+const dropdownLinks = document.querySelectorAll('.dropdown');
+
+dropdownLinks.forEach(function (link) {
+  const dropdownContent = link.nextElementSibling;
+  const dropdownLinksContainer = link.parentElement.parentElement;
+
+  dropdownContent.classList.remove('is-open');
+  dropdownLinksContainer.classList.remove('is-open');
+
+  link.addEventListener('click', function (event) {
+    dropdownContent.classList.toggle('is-open');
+    dropdownLinksContainer.classList.toggle('is-open');
+  });
+});
+
 // ---------------------------------------------------------------
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
