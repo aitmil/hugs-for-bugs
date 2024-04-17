@@ -1,14 +1,7 @@
-.reviews-section {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
 .reviews-title {
   font-size: 16px;
-  font-weight: 600;
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: var(--headers-text-color);
   margin-bottom: 32px;
 }
 
@@ -26,6 +19,7 @@
 .user-review-inner-wrapper {
   height: 100%;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 .reviews-item-img {
@@ -48,7 +42,6 @@
 
 .review-user-comment {
   margin: 0;
-  /* text-overflow: ellipsis; */
   overflow: hidden;
 }
 
@@ -65,20 +58,21 @@
   margin-top: 32px;
 }
 
-.reviews-swiper-container .swiper-button-prev {
-  width: 68px;
-}
-
-.swiper-container .swiper-button-next {
-  width: 68px;
-}
-
 .reviews-swiper-btn {
   width: 52px;
   height: 52px;
   border-radius: 50%;
   border: 1px solid rgba(250, 250, 250, 0.5);
   background-color: transparent;
+  transition: 250ms ease-in-out;
+
+  &:hover{
+    border-color: rgba(250, 250, 250);
+  }
+
+  &:focus{
+border-color: rgba(250, 250, 250);
+  }
 }
 
 .reviews-btn-container svg {
@@ -92,14 +86,6 @@
 
 .swiper-container .swiper-button-prev:after {
   content: '';
-}
-
-.reviews-container .swiper-button-prev svg {
-  width: 32px;
-}
-
-.reviews-container .swiper-button-next svg {
-  width: 32px;
 }
 
 /* ===================================== */
