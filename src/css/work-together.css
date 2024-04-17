@@ -99,7 +99,7 @@
   font-size: 14px;
   border: 1px inset var(--border-color);
   border-radius: 60px;
-  padding: 10px 12px;
+  padding: 10px 8px;
   white-space: nowrap;
 }
 
@@ -209,6 +209,10 @@
   }
   .work-together-form-input {
     height: 44px;
+  }
+  .work-together-form-error {
+    color: red;
+    font-size: 12px;
   }
   .work-together-form-comment {
     height: 44px;
