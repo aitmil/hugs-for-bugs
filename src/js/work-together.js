@@ -80,7 +80,8 @@ function sendFormData(email, comment) {
       console.log('Response from server:', response);
       if (response.status === 201) {
         openModal();
-        clearForm();
+          clearForm();
+          console.clear(); 
       } else {
         throw new Error('Unexpected response from server');
       }
@@ -152,6 +153,7 @@ function openModal() {
   if (backdrop && modal) {
     backdrop.classList.add('active');
     modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
     document.addEventListener('keydown', closeModalOnEscape);
     backdrop.addEventListener('click', closeModal);
   }
@@ -164,6 +166,7 @@ function closeModal() {
   if (backdrop && modal) {
     backdrop.classList.remove('active');
     modal.classList.remove('active');
+    document.body.style.overflow = '';
     document.removeEventListener('keydown', closeModalOnEscape);
     backdrop.removeEventListener('click', closeModal);
   }

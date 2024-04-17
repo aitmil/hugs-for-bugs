@@ -171,6 +171,7 @@
 }
 
 @media screen and (min-width: 768px) {
+  
   .work-together-picture-image {
     width: 70px;
   }
@@ -178,7 +179,6 @@
   .work-together-container {
     padding-top: 85px;
     padding-bottom: 169px;
-    margin: 0;
   }
 
   .work-together-logo-title {
