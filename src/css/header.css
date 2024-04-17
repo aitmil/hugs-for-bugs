@@ -32,10 +32,6 @@
   display: none;
 }
 
-.header-svg:hover,
-.header-svg:focus {
-  color: #242527;
-}
 
 /* -------- MOBILE MENU ---------- */
 
@@ -120,7 +116,7 @@
 
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
-  color: var(--primary-dark-color);
+ text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 .header-link-mobile {
@@ -139,7 +135,7 @@
 .header-link-mobile:hover,
 .header-link-mobile:focus {
   background-color: var(--accent-color);
-  color: var(--primary-dark-color);
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 /* ----------- TABLET ----------- */
@@ -161,9 +157,6 @@
     display: flex;
   }
 
-  .order-link:hover {
-    color: #3b3b3b;
-  }
 
   .header-navigation {
     display: flex;
@@ -204,10 +197,10 @@
     z-index: 999;
   }
 
-  .dropdown-content a {
+  /* .dropdown-content a {
     color: inherit;
     transition: color var(--transition);
-  }
+  } */
 
   .dropdown:hover,
   .dropdown-content a:hover,
