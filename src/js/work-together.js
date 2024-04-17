@@ -80,7 +80,8 @@ function sendFormData(email, comment) {
       console.log('Response from server:', response);
       if (response.status === 201) {
         openModal();
-        clearForm();
+          clearForm();
+          console.clear(); 
       } else {
         throw new Error('Unexpected response from server');
       }
