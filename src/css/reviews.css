@@ -62,16 +62,16 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  border: 1px solid rgba(250, 250, 250, 0.5);
+  border: 1px solid var(--arrow-add-color);
   background-color: transparent;
-  transition: 250ms ease-in-out;
+  transition: border-color var(--transition);
 
-  &:hover{
-    border-color: rgba(250, 250, 250);
+  &:hover {
+    border-color: var(--primary-light-color);
   }
 
-  &:focus{
-border-color: rgba(250, 250, 250);
+  &:focus {
+    border-color: var(--primary-light-color);
   }
 }
 
@@ -90,7 +90,12 @@ border-color: rgba(250, 250, 250);
 
 /* ===================================== */
 
-.swiper-button-reviews-disabled > .reviews-swiper-btn {
+.swiper-button-reviews-disabled {
+  border-color: var(--border-color);
+}
+
+.swiper-button-reviews-disabled > .reviews-swiper-btn:hover,
+.swiper-button-reviews-disabled > .reviews-swiper-btn:focus {
   border-color: var(--border-color);
 }
 
