@@ -34,3 +34,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+a:focus,
+input:focus,
+textarea:focus,
+a:active,
+input:active,
+textarea:active {
+  outline: none;
+}
+
+a,
+input,
+textarea {
+  outline: none;
+}
