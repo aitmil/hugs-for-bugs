@@ -1,49 +1,41 @@
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 
-function initAboutMeAccordion() {
-  const accordions = Array.from(document.querySelectorAll('.about-me__accordion-container'));
-
-  new Accordion(accordions, {
-    duration: 400,
-    showMultiple: true,
-    collapse: true,
-    elementClass: 'about-me__item',
-    triggerClass: 'about-me__button',
-    panelClass: 'about-me__panel-text',
-    headerClass: "about-me__header",
-    
-    open(currElement) {
-      const panelContent = currElement.querySelector('.about-me__panel-text');
-      panelContent.open(0)
-    },
-    beforeOpen: (currElement) => {
-      const panelContent = currElement.querySelector('.about-me__panel-text');
-      panelContent.style.display = 'block';
-    },
-    beforeClose: (currElement) => {
-      const panelContent = currElement.querySelector('.about-me__panel-text');
-      panelContent.style.display = 'none';
-    },
-  });
-
-  
-}
-
-initAboutMeAccordion();
-
-
-document.querySelectorAll('.about-me__button').forEach(button => {
-  button.addEventListener('click', function () {
-    this.querySelector('.about-me__icon').classList.toggle(
-      'about-me__icon--rotate'
-    );
-  });
+new Accordion('.accordion-container', {
+  duration: 500,
+  showMultiple: true,
+  openOnInit: [0],
 });
 
+const acButtons = document.querySelectorAll('.ac-trigger');
+const acS = document.querySelectorAll('.ac-icon');
+acButtons.forEach(item =>
+  item.addEventListener('click', () => {
+    if (item.querySelector('svg.ac-icon').classList.contains('icon-first')) {
+      if (
+        item
+          .querySelector('svg.ac-icon')
+          .classList.contains('ac-icon-active-first')
+      )
+        item
+          .querySelector('svg.ac-icon')
+          .classList.remove('ac-icon-active-first');
+      else {
+        item.querySelector('svg.ac-icon').classList.add('ac-icon-active-first');
+      }
+    }
+    if (
+      item.querySelector('svg.ac-icon').classList.contains('ac-icon-active')
+    ) {
+      item.querySelector('svg.ac-icon').classList.remove('ac-icon-active');
+    } else {
+      item.querySelector('svg.ac-icon').classList.add('ac-icon-active');
+    }
+  })
+);
 //=========================================================================
 
 const mySwiper = new Swiper('.swiper-skills-list-container', {
