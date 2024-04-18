@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 
 function initAboutMeAccordion() {
@@ -11,6 +11,8 @@ function initAboutMeAccordion() {
     collapse: true,
   });
 }
+
+console.log(Accordion);
 
 initAboutMeAccordion();
 
@@ -37,7 +39,7 @@ document.querySelectorAll('.about-me__button').forEach(button => {
 //=========================================================================
 
 const mySwiper = new Swiper('.swiper-skills-list-container', {
-  modules: [Navigation],
+  modules: [Navigation, Keyboard, Mousewheel],
   spaceBetween: 0,
   loop: true,
   loopSlides: 6,
