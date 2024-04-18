@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
   textarea.addEventListener('keydown', handleKeyDown);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const emailInput = document.getElementById('client-email');
+  emailInput.addEventListener('input', limitAndEllipsis);
+  emailInput.addEventListener('input', handleInput);
+  emailInput.addEventListener('keydown', handleKeyDown);
+});
+
 //
 const emailInput = document.getElementById('client-email');
 const commentInput = document.getElementById('client-comment');
@@ -63,22 +70,10 @@ function clearForm() {
 }
 
 // Function to validate email format
-document.getElementById('work-together-form').addEventListener('submit', function(event) {
-    var emailInput = document.getElementById('client-email').value;
-
-    if (!validateEmail(emailInput)) {
-        document.getElementById('email-error').innerText = 'Невірний формат електронної пошти';
-        event.preventDefault(); // Перешкоджаємо відправленню форми у випадку неправильного формату
-    } else {
-        document.getElementById('email-error').innerText = ''; // Очищаємо повідомлення про помилку, якщо формат правильний
-    }
-});
-
 function validateEmail(email) {
-    const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-    return pattern.test(email);
+  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  return pattern.test(email);
 }
-
 
 // Function to send form data to server
 function sendFormData(email, comment) {
