@@ -18,11 +18,17 @@
 
 .faq-sector {
   padding: 20px 0;
-  border-bottom: 1px solid;
-  border-color: #fafafa33;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  
+}
+
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
 }
 
 .faq-sector-top {
@@ -52,6 +58,10 @@
   flex-shrink: 0;
 }
 
+.faq-accordion:hover, .faq-accordion:focus {
+  border-color: #fafafa;
+}
+
 .faq-arrow {
   position: absolute;
   top: 50%;
@@ -67,7 +77,7 @@
 }
 
 .faq-sector-description {
-  display: block;
+  display: none;
   opacity: 60%;
   font-weight: 500;
   font-size: 16px;
