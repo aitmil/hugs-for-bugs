@@ -19,7 +19,7 @@
 .user-review-inner-wrapper {
   height: 100%;
   overflow: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 .reviews-item-img {
