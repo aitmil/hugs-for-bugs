@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
   textarea.addEventListener('keydown', handleKeyDown);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const emailInput = document.getElementById('client-email');
+  emailInput.addEventListener('input', limitAndEllipsis);
+  emailInput.addEventListener('input', handleInput);
+  emailInput.addEventListener('keydown', handleKeyDown);
+});
+
 //
 const emailInput = document.getElementById('client-email');
 const commentInput = document.getElementById('client-comment');
