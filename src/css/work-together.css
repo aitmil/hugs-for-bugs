@@ -39,7 +39,7 @@
 
 .work-together-form-input {
   width: 100%;
-  margin-bottom: 16px;
+
   padding-bottom: 20px;
   color: var(--primary-light-color);
   background-color: transparent;
@@ -51,6 +51,17 @@
   border-bottom: 1px solid var(--primary-light-color);
   outline: none;
   transition: var(--transition);
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.work-together-form-error {
+  display: block;
+}
+.work-together-form-input-section {
+  width: 100%;
 }
 .work-together-form-comment {
   width: 100%;
@@ -171,7 +182,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .work-together-picture-image {
     width: 70px;
   }
@@ -246,6 +256,12 @@
   .modal-description {
     width: 364px;
     text-align: center;
+  }
+  .work-together-form-input {
+    width: 245px;
+  }
+  .work-together-form-comment {
+    width: 245px;
   }
 }
 

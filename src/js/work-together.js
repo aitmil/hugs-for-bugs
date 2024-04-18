@@ -27,7 +27,10 @@ function handleKeyDown(event) {
   const input = event.target;
   const maxLength = 50;
 
-  if ((event.keyCode === 8 || event.keyCode === 46) && input.value.endsWith('...')) {
+  if (
+    (event.keyCode === 8 || event.keyCode === 46) &&
+    input.value.endsWith('...')
+  ) {
     input.value = input.value.slice(0, -3);
   } else if (event.keyCode === 8 || event.keyCode === 46) {
     const prevValue = input.dataset.prevValue || '';
@@ -36,14 +39,14 @@ function handleKeyDown(event) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const textarea = document.getElementById('client-comment');
   textarea.addEventListener('input', limitAndEllipsis);
   textarea.addEventListener('input', handleInput);
   textarea.addEventListener('keydown', handleKeyDown);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const emailInput = document.getElementById('client-email');
   emailInput.addEventListener('input', limitAndEllipsis);
   emailInput.addEventListener('input', handleInput);
@@ -63,9 +66,12 @@ if (emailInput && commentInput) {
 function clearForm() {
   const emailInput = document.getElementById('client-email');
   const commentInput = document.getElementById('client-comment');
+  const mailValidate = document.querySelector('.work-together-form-error');
   if (emailInput && commentInput) {
     emailInput.value = '';
     commentInput.value = '';
+    emailInput.style.borderBottomColor = 'var(--border-color)';
+    mailValidate.style.display = 'none';
   }
 }
 
@@ -74,6 +80,22 @@ function validateEmail(email) {
   const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
   return pattern.test(email);
 }
+
+const mailValidate = document.querySelector('.work-together-form-error');
+
+emailInput.addEventListener('blur', e => {
+  if (validateEmail(e.target.value)) {
+    emailInput.style.borderBottomColor = 'var(--success-text-color)';
+    mailValidate.style.color = 'var(--success-text-color)';
+    mailValidate.style.fontSize = '';
+    mailValidate.textContent = 'Success!';
+  } else {
+    emailInput.style.borderBottomColor = 'var(--button-color)';
+    mailValidate.style.color = 'var(--button-color)';
+    mailValidate.style.fontSize = '';
+    mailValidate.textContent = 'Invalid email, try again!';
+  }
+});
 
 // Function to send form data to server
 function sendFormData(email, comment) {
@@ -87,8 +109,8 @@ function sendFormData(email, comment) {
       console.log('Response from server:', response);
       if (response.status === 201) {
         openModal();
-          clearForm();
-          console.clear(); 
+        clearForm();
+        console.clear();
       } else {
         throw new Error('Unexpected response from server');
       }
