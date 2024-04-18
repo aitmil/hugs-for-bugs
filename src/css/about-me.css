@@ -126,7 +126,9 @@
 
 .about-me__panel-text {
   line-height: 24px;
+  display: none;
 }
+
 
 .about-me__item {
   padding: 20px 0;

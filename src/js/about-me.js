@@ -5,28 +5,36 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 
 function initAboutMeAccordion() {
-  new Accordion('.about-me__accordion-container', {
-    duration: 400,
-    showMultiple: false,
-    collapse: true,
-  });
-}
+  const accordions = Array.from(document.querySelectorAll('.about-me__accordion-container'));
 
-console.log(Accordion);
+  new Accordion(accordions, {
+    duration: 400,
+    showMultiple: true,
+    collapse: true,
+    elementClass: 'about-me__item',
+    triggerClass: 'about-me__button',
+    panelClass: 'about-me__panel-text',
+    headerClass: "about-me__header",
+    
+    open(currElement) {
+      const panelContent = currElement.querySelector('.about-me__panel-text');
+      panelContent.open(0)
+    },
+    beforeOpen: (currElement) => {
+      const panelContent = currElement.querySelector('.about-me__panel-text');
+      panelContent.style.display = 'block';
+    },
+    beforeClose: (currElement) => {
+      const panelContent = currElement.querySelector('.about-me__panel-text');
+      panelContent.style.display = 'none';
+    },
+  });
+
+  
+}
 
 initAboutMeAccordion();
 
-const accordionHeaders = document.querySelectorAll('.about-me__item--box');
-accordionHeaders.forEach(header => {
-  header.addEventListener('click', function () {
-    const accordionItem = this.closest('.about-me__item');
-    const panel = accordionItem.querySelector('.about-me__panel');
-
-    if (panel) {
-      panel.classList.toggle('visually-hidden');
-    }
-  });
-});
 
 document.querySelectorAll('.about-me__button').forEach(button => {
   button.addEventListener('click', function () {
